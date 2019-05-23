@@ -147,7 +147,6 @@
     </div>
 </div>
 <div id="slidebar-black" onclick="disable_slidebar()"></div>
-
 <nav class="navbar navbar-expand-md bg-light navbar-light">
     <div class="container">
         <div class="slidebar-toggler" onclick="show_slidebar()">
@@ -182,8 +181,26 @@
         </div>
     </div>
 </nav>
+
 <div class="container">
 
 </div>
+
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $.ajax({
+            url: "https://www.baidu.com",
+            type: "GET",
+            success: function (data) {
+                $(".container").append(data);
+                alert("success");
+            },
+            error:function (msg) {
+                alert("error: " + msg);
+            }
+        });
+    });
+
+</script>
 </body>
 </html>
