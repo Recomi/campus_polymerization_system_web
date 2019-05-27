@@ -6,46 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
-<!--    <script src="js/bootstrap.min.js"></script>-->
     <script src="js/jquery-3.4.0.min.js"></script>
-    <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="https://cdn.bootcss.com/popper.js/1.15.0/esm/popper.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <style type="text/css">
+        .card_title{
+            height: 50px;
+        }
 
-<!--    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>-->
-<!--    <script src="js/popper.min.js"></script>-->\
-
-<!--    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>-->
-<!--    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>-->
+    </style>
 </head>
 <body>
 <div class="container">
-    <h2>选项卡切换</h2>
-    <br>
     <!-- Nav tabs -->
-    <ul class="nav nav-tabs" role="tablist">
+    <ul class="nav nav-tabs justify-content-around" role="tablist">
         <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+            <a class="nav-link active" data-toggle="tab" href="#home">馆荐</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu1">Menu 1</a>
+            <a class="nav-link" data-toggle="tab" href="#menu1">公告</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a>
+            <a class="nav-link" data-toggle="tab" href="#menu2">个人中心</a>
         </li>
     </ul>
 
     <!-- Tab panes -->
     <div class="tab-content">
         <div id="home" class="container tab-pane active"><br>
-            <h3>HOME</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="card_title d-flex align-items-center justify-content-between">
+                <span class="">精品推荐</span>
+                <button type="button" class="btn btn-light">全部</button>
+            </div>
+
+            <div class="row justify-content-around">
+                <div class="pictureBig">
+                    <img src="img/book.jpg" class="img-responsive" width="102" height="144">
+                </div>
+                <div class="pictureBig">
+                    <img src="img/book.jpg" class="img-responsive" width="102" height="144">
+                </div>
+                <div class="pictureBig">
+                    <img src="img/book.jpg" class="img-responsive" width="102" height="144">
+                </div>
+            </div>
         </div>
         <div id="menu1" class="container tab-pane fade"><br>
-            <h3>Menu 1</h3>
+            <h3>公告</h3>
             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
         <div id="menu2" class="container tab-pane fade"><br>
-            <h3>Menu 2</h3>
+            <h3>个人中心</h3>
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
         </div>
     </div>
