@@ -31,6 +31,20 @@
 				max-width: 10rem;
 				max-height: 8rem;
 			}
+			.card-Avatar {
+				width: 6rem;
+				height: 6rem;
+				min-height: 100%;
+				max-width: 6rem;
+				max-height: 6rem;
+			}
+			.libraryIcons {
+				width: 5rem;
+				height: 5rem;
+				min-height: 100%;
+				max-width: 5rem;
+				max-height: 5rem;
+			}
 		</style>
 	</head>
 
@@ -40,14 +54,14 @@
 			mui.init()
 		</script>
 		<div id="slider" class="mui-slider">
-			<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
-				<a class="mui-control-item" href="#item1mobile">
+			<div id="sliderSegmentedControl" class="bg-white mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+				<a class="mui-control-item click-dark" href="#item1mobile">
 					馆荐
 				</a>
-				<a class="mui-control-item" href="#item2mobile">
+				<a class="mui-control-item click-dark" href="#item2mobile">
 					公告
 				</a>
-				<a class="mui-control-item" href="#item3mobile">
+				<a class="mui-control-item click-dark" href="#item3mobile">
 					个人中心
 				</a>
 			</div>
@@ -207,11 +221,52 @@
 					</li>
 				</ul>
 				<div id="item3mobile" class="mui-slider-item mui-control-content border-0">
-					<ul class="mui-table-view">
-						<li class="mui-table-view-cell">
-							333333333
-						</li>
-					</ul>
+					<div class="mui-card mb-3 m-3">
+						<div class="col-4">
+							<img class="float-left card-Avatar border radio-icon m-2 ml-3" src="img/headicon_default.jpg">
+						</div>
+						<div class="p-1 col-10 offset-5">
+							<p class="card-text mt-4">阅读时长:  7223分钟</p>
+							<p class="card-text">借阅卡号:  VIP 17304590108</p>
+						</div>
+					</div>
+					<div class="row justify-content-center mb-3 ml-3 mr-3">
+						<div class="col-4  p-0 pr-2">
+							<div class="mui-card mui-text-center m-0">
+								<a href="#">
+								<span id="1">
+									<img src="icons/ic_collection.png" class="libraryIcons mt-3"/>
+								</span>
+									<p>我的收藏</p>
+								</a>
+							</div>
+						</div>
+						<div class="col-4 p-0 pl-1 pr-1">
+							<div class="mui-card mui-text-center m-0">
+								<a href="#">
+								<span id="2">
+									<img src="icons/ic_history.png" class="libraryIcons mt-3"/>
+								</span>
+									<p>借阅历史</p>
+								</a>
+							</div>
+						</div>
+						<div class="col-4 p-0 pl-2">
+							<div class="mui-card mui-text-center m-0">
+								<a href="#">
+								<span id="3">
+									<img src="icons/ic_reservation.png" class="libraryIcons mt-3"/>
+								</span>
+									<p>预约图书</p>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="mui-table-view">
+						<div class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="#">更多</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

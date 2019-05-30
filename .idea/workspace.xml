@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/css/bootstrap.css" line="4556" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d47074d-93c1-4f64-9a62-53bf27f8bbb3" name="Default Changelist" comment="初始化框架">
-      <change afterPath="$PROJECT_DIR$/img/book.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library.html" afterDir="false" />
+    <list default="true" id="9b4d9f6a-91ee-41fa-aa5c-673c66db71dc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/icons/ic_collection.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/ic_history.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/ic_reservation.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library.html" beforeDir="false" afterPath="$PROJECT_DIR$/library.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,54 +24,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/模板.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/library.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1274">
-              <caret line="49" column="22" lean-forward="true" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="5" column="1102" selection-start-line="5" selection-start-column="1102" selection-end-line="5" selection-end-column="1102" />
+            <state relative-caret-position="425">
+              <caret line="246" column="45" lean-forward="true" selection-start-line="246" selection-start-column="45" selection-end-line="246" selection-end-column="45" />
               <folding>
-                <element signature="e#25768#26002#2" expanded="true" />
-                <element signature="e#26806#26959#1" expanded="true" />
-                <element signature="e#26999#27233#1" expanded="true" />
-                <element signature="e#30239#30515#2" expanded="true" />
-                <element signature="e#31347#31500#1" expanded="true" />
-                <element signature="e#31540#31816#1" expanded="true" />
-                <element signature="e#61072#61259#2" expanded="true" />
-                <element signature="e#61488#61624#2" expanded="true" />
-                <element signature="e#62027#62160#2" expanded="true" />
-                <element signature="e#63642#63795#1" expanded="true" />
-                <element signature="e#75788#76018#2" expanded="true" />
-                <element signature="e#76885#77121#2" expanded="true" />
-                <element signature="e#106714#106891#2" expanded="true" />
-                <element signature="e#106937#107114#2" expanded="true" />
+                <element signature="n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#ul#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/momo.html">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="7" selection-end-column="98" />
+            <state relative-caret-position="-732">
+              <caret line="44" column="89" lean-forward="true" selection-start-line="44" selection-start-column="89" selection-end-line="44" selection-end-column="89" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/minUi.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="92" column="39" lean-forward="true" selection-start-line="92" selection-start-column="39" selection-end-line="92" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -80,6 +72,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>text-in</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -90,6 +87,9 @@
         <option value="$PROJECT_DIR$/模板.html" />
         <option value="$PROJECT_DIR$/momo.html" />
         <option value="$PROJECT_DIR$/css/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/css/index.css" />
+        <option value="$PROJECT_DIR$/css/mui.min.css" />
         <option value="$PROJECT_DIR$/library.html" />
       </list>
     </option>
@@ -97,17 +97,18 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-16" />
-    <option name="y" value="-8" />
-    <option name="width" value="1037" />
-    <option name="height" value="912" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-4" />
+    <option name="y" value="19" />
+    <option name="width" value="1403" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -118,39 +119,30 @@
             <path>
               <item name="campus_polymerization_system_web" type="b2602c69:ProjectViewProjectNode" />
               <item name="campus_polymerization_system_web" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="campus_polymerization_system_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="campus_polymerization_system_web" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="campus_polymerization_system_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="icons" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/icons" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\campus_polymerization_system_web\icons" />
       <recent name="F:\campus_polymerization_system_web\img" />
       <recent name="G:\WorkingSpace\apache-Space\apache-Documents\campus_polymerization_system" />
     </key>
@@ -167,12 +159,22 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="library.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/campus_polymerization_system_web/library.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.library.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6d47074d-93c1-4f64-9a62-53bf27f8bbb3" name="Default Changelist" comment="" />
+      <changelist id="9b4d9f6a-91ee-41fa-aa5c-673c66db71dc" name="Default Changelist" comment="" />
       <created>1558353459775</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -185,6 +187,9 @@
       <workItem from="1558514806106" duration="3964000" />
       <workItem from="1558571744352" duration="688000" />
       <workItem from="1558957622587" duration="1758000" />
+      <workItem from="1559202826003" duration="7236000" />
+      <workItem from="1559213658136" duration="251000" />
+      <workItem from="1559213922661" duration="11064000" />
     </task>
     <task id="LOCAL-00001" summary="初始化主页">
       <created>1558353973758</created>
@@ -200,22 +205,30 @@
       <option name="project" value="LOCAL" />
       <updated>1558421964137</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="图书馆馆荐公告模块界面设计">
+      <created>1559210481236</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1559210481236</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17467000" />
+    <option name="totallyTimeSpent" value="38579000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-4" y="19" width="1403" height="1040" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.114072494" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12137007" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.09481808" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -237,12 +250,10 @@
     <MESSAGE value="初始化主页" />
     <MESSAGE value="改个名" />
     <MESSAGE value="初始化框架" />
-    <option name="LAST_COMMIT_MESSAGE" value="初始化框架" />
+    <MESSAGE value="图书馆馆荐公告模块界面设计" />
+    <option name="LAST_COMMIT_MESSAGE" value="图书馆馆荐公告模块界面设计" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/jquery-3.4.0.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -264,24 +275,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/exchangeUi.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="790">
-          <caret line="178" column="30" lean-forward="true" selection-start-line="178" selection-start-column="30" selection-end-line="178" selection-end-column="30" />
+        <state relative-caret-position="286">
+          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/momo.html" />
+    <entry file="file://$PROJECT_DIR$/libraryb.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slideBar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/模板.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        <state>
+          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/images/2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/logo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/login-1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/cbd.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/headicon_default.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/book.jpg" />
+    <entry file="file://$PROJECT_DIR$/images/muwu.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/4.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="5" column="1102" selection-start-line="5" selection-start-column="1102" selection-end-line="5" selection-end-column="1102" />
+        <state relative-caret-position="389">
+          <caret line="5" column="133147" lean-forward="true" selection-start-line="5" selection-start-column="133147" selection-end-line="5" selection-end-column="133147" />
           <folding>
             <element signature="e#25768#26002#2" expanded="true" />
             <element signature="e#26806#26959#1" expanded="true" />
@@ -301,17 +351,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/momo.html">
+    <entry file="file://$PROJECT_DIR$/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="7" selection-end-column="98" />
+        <state relative-caret-position="264">
+          <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-732">
+          <caret line="44" column="89" lean-forward="true" selection-start-line="44" selection-start-column="89" selection-end-line="44" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/minUi.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="92" column="39" lean-forward="true" selection-start-line="92" selection-start-column="39" selection-end-line="92" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/icons/ic_cricle.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/icons/ic_associations.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/mui.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="1442" column="32" selection-start-line="1442" selection-start-column="32" selection-end-line="1442" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="616" column="14" selection-start-line="616" selection-start-column="2" selection-end-line="616" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/library.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1274">
-          <caret line="49" column="22" lean-forward="true" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
+        <state relative-caret-position="425">
+          <caret line="246" column="45" lean-forward="true" selection-start-line="246" selection-start-column="45" selection-end-line="246" selection-end-column="45" />
+          <folding>
+            <element signature="n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
