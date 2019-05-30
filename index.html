@@ -12,6 +12,16 @@
     <!--<script src="js/popper.min.js"></script>-->
     <script type="text/javascript" src="js/index.js"></script>
     <link rel="stylesheet" type="text/css" href="css/index.css">
+<!--    mui-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/mui.min.css">
+    <style type="text/css">
+        #list {
+            /*避免导航边框和列表背景边框重叠，看起来像两条边框似得；*/
+            margin-top: -1px;
+        }
+    </style>
 
     <style type="text/css">
         .loop{
@@ -147,7 +157,6 @@
     </div>
 </div>
 <div id="slidebar-black" onclick="disable_slidebar()"></div>
-
 <nav class="navbar navbar-expand-md bg-light navbar-light">
     <div class="container">
         <div class="slidebar-toggler" onclick="show_slidebar()">
@@ -182,8 +191,26 @@
         </div>
     </div>
 </nav>
-<div class="container">
+
+<div class="container" id="main">
 
 </div>
+
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $.ajax({
+            url: "https://www.baidu.com",
+            type: "GET",
+            success: function (data) {
+                alert("success");
+                $("#main").append(data);
+            },
+            error:function (msg) {
+                alert("error: " + msg);
+            }
+        });
+    });
+
+</script>
 </body>
 </html>

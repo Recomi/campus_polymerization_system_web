@@ -1,68 +1,182 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <title>Recomiの家</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/all.min.css">
-    <script src="js/jquery-3.4.0.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <style type="text/css">
-        .card_title{
-            height: 50px;
-        }
+<!doctype html>
+<html>
 
-    </style>
-</head>
-<body>
-<div class="container">
-    <!-- Nav tabs -->
-    <ul class="nav nav-tabs justify-content-around" role="tablist">
-        <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#home">馆荐</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu1">公告</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu2">个人中心</a>
-        </li>
-    </ul>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			.imgMargin{
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+		</style>
+	</head>
 
-    <!-- Tab panes -->
-    <div class="tab-content">
-        <div id="home" class="container tab-pane active"><br>
-            <div class="card_title d-flex align-items-center justify-content-between">
-                <span class="">精品推荐</span>
-                <button type="button" class="btn btn-light">全部</button>
-            </div>
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<div id="slider" class="mui-slider">
+			<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+				<a class="mui-control-item" href="#item1mobile">
+					馆荐
+				</a>
+				<a class="mui-control-item" href="#item2mobile">
+					公告
+				</a>
+				<a class="mui-control-item" href="#item3mobile">
+					个人中心
+				</a>
+			</div>
+			<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-4"></div>
+			<div class="mui-slider-group">
+				<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+					<div class="mui-card">
+						<div class="mui-card-header">
+							精品推荐
+							<button type="button" class="mui-btn mui-btn-outlined">全部</button>
+						</div>
+						<div class="mui-card-content">
+							<div class="mui-row">
+								<div class="imgMargin mui-col-xs-3">
+									<img src="img/book.jpg">
+										<p class="mui-text-center">龙族</p>
+									</img>
+								</div>
+								<div class="imgMargin mui-col-xs-3">
+									<img src="img/book.jpg">
+										<p class="mui-text-center">龙族</p>
+									</img>
+								</div>
+								<div class="imgMargin mui-col-xs-3">
+									<img src="img/book.jpg">
+										<p class="mui-text-center">龙族</p>
+									</img>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mui-card">
+						<div class="mui-card-header">
+							文学
+							<button type="button" class="mui-btn mui-btn-outlined">全部</button>
+						</div>
+						<div class="mui-card-content">
+							<div class="mui-row">
+								<div class="imgMargin mui-col-xs-3">
+									<img src="img/book.jpg">
+										<p class="mui-text-center">龙族</p>
+									</img>
+								</div>
+								<div class="imgMargin mui-col-xs-3">
+									<img src="img/book.jpg">
+										<p class="mui-text-center">龙族</p>
+									</img>
+								</div>
+								<div class="imgMargin mui-col-xs-3">
+									<img src="img/book.jpg">
+										<p class="mui-text-center">龙族</p>
+									</img>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mui-card">
+						<div class="mui-card-header">
+							历史
+							<button type="button" class="mui-btn mui-btn-outlined">全部</button>
+						</div>
+						<div class="mui-card-content">
+							<div class="mui-row">
+								<div class="imgMargin mui-col-xs-3">
+									<img src="img/book.jpg">
+										<p class="mui-text-center">龙族</p>
+									</img>
+								</div>
+								<div class="imgMargin mui-col-xs-3">
+									<img src="img/book.jpg">
+										<p class="mui-text-center">龙族</p>
+									</img>
+								</div>
+								<div class="imgMargin mui-col-xs-3">
+									<img src="img/book.jpg">
+										<p class="mui-text-center">龙族</p>
+									</img>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mui-card">
+						<div class="mui-card-header">
+							名著
+							<button type="button" class="mui-btn mui-btn-outlined">全部</button>
+						</div>
+						<div class="mui-card-content">
+							<div class="mui-row">
+								<div class="imgMargin mui-col-xs-3">
+									<img src="img/book.jpg">
+										<p class="mui-text-center">龙族</p>
+									</img>
+								</div>
+								<div class="imgMargin mui-col-xs-3">
+									<img src="img/book.jpg">
+										<p class="mui-text-center">龙族</p>
+									</img>
+								</div>
+								<div class="imgMargin mui-col-xs-3">
+									<img src="img/book.jpg">
+										<p class="mui-text-center">龙族</p>
+									</img>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mui-card">
+						<div class="mui-card-header">
+							其他
+							<button type="button" class="mui-btn mui-btn-outlined">全部</button>
+						</div>
+						<div class="mui-card-content">
+							<div class="mui-row">
+								<div class="imgMargin mui-col-xs-3">
+									<img src="img/book.jpg">
+										<p class="mui-text-center">龙族</p>
+									</img>
+								</div>
+								<div class="imgMargin mui-col-xs-3">
+									<img src="img/book.jpg">
+										<p class="mui-text-center">龙族</p>
+									</img>
+								</div>
+								<div class="imgMargin mui-col-xs-3">
+									<img src="img/book.jpg">
+										<p class="mui-text-center">龙族</p>
+									</img>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="item2mobile" class="mui-slider-item mui-control-content">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell">
+							22222222
+						</li>
+					</ul>
+				</div>
+				<div id="item3mobile" class="mui-slider-item mui-control-content">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell">
+							333333333
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
-            <div class="row justify-content-around">
-                <div class="pictureBig">
-                    <img src="img/book.jpg" class="img-responsive" width="102" height="144">
-                </div>
-                <div class="pictureBig">
-                    <img src="img/book.jpg" class="img-responsive" width="102" height="144">
-                </div>
-                <div class="pictureBig">
-                    <img src="img/book.jpg" class="img-responsive" width="102" height="144">
-                </div>
-            </div>
-        </div>
-        <div id="menu1" class="container tab-pane fade"><br>
-            <h3>公告</h3>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <div id="menu2" class="container tab-pane fade"><br>
-            <h3>个人中心</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-        </div>
-    </div>
-</div>
+	</body>
 
-</body>
 </html>
