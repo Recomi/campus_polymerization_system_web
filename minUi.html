@@ -1,0 +1,175 @@
+<!--<!doctype html>-->
+<!--<html>-->
+
+	<!--<head>-->
+		<!--<meta charset="UTF-8">-->
+		<!--<title></title>-->
+		<!--<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />-->
+		<!--<link href="css/mui.min.css" rel="stylesheet" />-->
+	<!--</head>-->
+	<style type="text/css">
+		.mui-slider-item img{
+			width: auto;
+			height: 238px;
+		}
+		.mui-row img{
+			height: 43px;
+			width: 43px;
+		}
+	</style>
+
+	<!--<body>-->
+		<!--<script src="js/mui.min.js"></script>-->
+		<!--<script type="text/javascript">-->
+			<!--mui.init()-->
+		<!--</script>-->
+		<div class="mui-slider">
+			<div class="mui-slider-group mui-slider-loop">
+				<!--支持循环，需要重复图片节点-->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#"><img src="images/4.jpg" /></a>
+				</div>
+				<div class="mui-slider-item">
+					<a href="#"><img src="images/1.jpg" /></a>
+				</div>
+				<div class="mui-slider-item">
+					<a href="#"><img src="images/2.jpg" /></a>
+				</div>
+				<div class="mui-slider-item">
+					<a href="#"><img src="images/3.jpg" /></a>
+				</div>
+				<div class="mui-slider-item">
+					<a href="#"><img src="images/4.jpg" /></a>
+				</div>
+				<!--支持循环，需要重复图片节点-->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#"><img src="images/1.jpg" /></a>
+				</div>
+			</div>
+		</div>
+		<div class="mui-content">
+			<div class="mui-card">
+				<div class="mui-row">
+				<div class="mui-col-sm-2 mui-col-xs-4 mui-text-center">
+					<a href="#">
+						<span id="">
+							<img src="icons/ic_library.png"/>
+						</span>
+						<p>图书馆</p>
+					</a>
+				</div>
+				<div class="mui-col-sm-2 mui-col-xs-4 mui-text-center">
+					<a href="#">
+						<span id="">
+							<img src="icons/ic_curriculum.png"/>
+						</span>
+						<p>课程表</p>
+					</a>
+				</div>
+				<div class="mui-col-sm-2 mui-col-xs-4 mui-text-center">
+					<a href="#">
+						<span id="">
+							<img src="icons/job.png"/>
+						</span>
+						<p>求职</p>
+					</a>
+				</div>
+				<div class="mui-col-sm-2 mui-col-xs-4 mui-text-center">
+					<a href="#">
+						<span id="">
+							<img src="icons/ic_associations.png"/>
+						</span>
+						<p>社团</p>
+					</a>
+				</div>
+				<div class="mui-col-sm-2 mui-col-xs-4 mui-text-center">
+					<a href="#">
+						<span id="">
+							<img src="icons/ic_cricle.png"/>
+						</span>
+						<p>圈子</p>
+					</a>
+				</div>
+				<div class="mui-col-sm-2 mui-col-xs-4 mui-text-center">
+					<a href="#">
+						<span id="">
+							<img src="icons/ic_curriculum.png"/>
+						</span>
+						<p>未定</p>
+					</a>
+				</div>
+			</div>
+			</div>
+			
+		</div>
+		<div class="mui-card">
+			<div class="mui-card-header mui-card-media">
+				<img src="icons/ic_book.svg"/>
+				<div class="mui-media-body " style="line-height: 36px;">
+					<p>今日课程</p>
+				</div>
+				<div class="mui-card-content">
+					<div class="mui-row">
+						<div class="mui-col-sm-6 mui-col-xs-6 mui-text-center">
+							<p>数据结构和算法（1-2节）</p>
+							<p>高等数学（3-4节）</p>
+							<p>体育与运动（5-6节）</p>
+						</div>
+						<div class="mui-col-sm-6 mui-col-xs-6 mui-text-center">
+							<p>Java高级设计（7-8节）</p>
+							<p>晚修（9-10节）</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mui-card">
+			<div class="mui-card-header mui-card-media">
+				<img src="icons/ic_weather.svg"/>
+				<div class="mui-media-body " style="line-height: 36px;">
+					<p>近况天气</p>
+				</div>
+				<div class="mui-card-content">
+					<div class="mui-row">
+						<div class=" mui-col-xs-3 mui-text-center">
+							<span id="">
+								<img src="icons/ic_weather_cloudy.svg"/>
+							</span>
+							<p>晴转多云</p>
+							<p>今天15°C</p>
+						</div>
+						<div class=" mui-col-xs-3 mui-text-center">
+							<span id="">
+								<img src="icons/ic_weather_cloudy.svg "/>
+							</span>
+							<p>晴转多云</p>
+							<p>明天15°C</p>
+						</div>
+						<div class=" mui-col-xs-3 mui-text-center">
+							<span id="">
+								<img src="icons/ic_weather_fine.svg"/>
+							</span>
+							<p>多云转晴</p>
+							<p>后天25°C</p>
+						</div>
+						<div class="mui-col-xs-3 mui-text-center">
+							<span id="">
+								<img src="icons/ic_weather_fine.svg"/>
+							</span>
+							<p>多云转晴</p>
+							<p>周六26°C</p>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var gallery = mui('.mui-slider');
+			gallery.slider({
+				interval: 5000 //自动轮播周期，若为0则不自动播放，默认为0；
+			});
+		</script>
+	<!--</body>-->
+
+<!--</html>-->
