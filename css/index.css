@@ -39,6 +39,68 @@ li{
 .ml-2_5 {
 	  margin-left: 0.75rem !important;
 }
+
+.click-light {
+    overflow: hidden;
+}
+.click-dark {
+    overflow: hidden;
+}
+.ripple-light {
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    position: absolute;
+    opacity: 1;
+}
+.ripple-dark {
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(99, 99, 99, 0.4);
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    position: absolute;
+    opacity: 1;
+}
+
+.rippleEffect {
+    -webkit-animation: rippleDrop .4s linear;
+    animation: rippleDrop .4s linear;
+}
+
+@-webkit-keyframes
+rippleDrop {  100% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    opacity: 0;
+}
+}
+@keyframes
+rippleDrop {  100% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    opacity: 0;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .bg-slide {
     background-color: #fff !important;
 }
