@@ -43,4 +43,5 @@ $(function(){
             left: x + 'px'
         }).addClass("rippleEffect");
     });
+
 });

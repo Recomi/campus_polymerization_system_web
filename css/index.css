@@ -61,7 +61,7 @@ li{
     width: 0;
     height: 0;
     border-radius: 50%;
-    background: rgba(99, 99, 99, 0.4);
+    background: rgba(132, 132, 132, 0.41);
     -webkit-transform: scale(0);
     -ms-transform: scale(0);
     transform: scale(0);
@@ -86,8 +86,7 @@ rippleDrop {  100% {
     -webkit-transform: scale(2);
     transform: scale(2);
     opacity: 0;
-}
-}
+} }
 
 
 
@@ -117,7 +116,7 @@ rippleDrop {  100% {
     border-radius: 100% ;
 }
 .headicon-mine {
-    max-width: 45px;
+    max-width: 65px;
 }
 .item {
 	transition: .2s;
@@ -126,7 +125,7 @@ rippleDrop {  100% {
     background-color: #eeeeee;
 }
 .slide-user {
-	padding-top: 20px; 
+	padding-top: 40px;
 	/* min-height: 300px; */
 	background-image: url(../img/shelter.jpg);
     background-position: center;
@@ -149,17 +148,17 @@ rippleDrop {  100% {
 						rgba(1,1,1, 0.5)   100% );;
 }
 .slide-user-name{
-	font-size: 0.9rem;
+	font-size: 1.3rem;
 	font-weight: bold;
 }
 .slide-user-id{
-	font-size: 0.8rem;
+	font-size: 1rem;
 }
 .list-group {
 	padding: 0.5rem 0;
 }
 .list-item-small {
-	padding: 0.5rem 1rem;
+	padding: 0.75rem 1rem;
 	display: flex;
 	/* margin-bottom: 0!important; */
 }

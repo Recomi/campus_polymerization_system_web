@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
+<<<<<<< Updated upstream
     <bookmark url="file://$PROJECT_DIR$/css/bootstrap.css" line="4556" />
   </component>
   <component name="ChangeListManager">
@@ -10,6 +11,26 @@
       <change afterPath="$PROJECT_DIR$/icons/ic_reservation.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/library.html" beforeDir="false" afterPath="$PROJECT_DIR$/library.html" afterDir="false" />
+=======
+    <bookmark url="file://$PROJECT_DIR$/circle_send.php" line="29" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6d47074d-93c1-4f64-9a62-53bf27f8bbb3" name="Default Changelist" comment="主页设计">
+      <change afterPath="$PROJECT_DIR$/css/ripple.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/menufold.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/menuunfold.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/shelter.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/ripple.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/ripple.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library.html" beforeDir="false" afterPath="$PROJECT_DIR$/library.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minUi.html" beforeDir="false" afterPath="$PROJECT_DIR$/minUi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/模板.html" beforeDir="false" afterPath="$PROJECT_DIR$/模板.html" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,16 +38,58 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
-    <execution>
-      <executable />
-    </execution>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< Updated upstream
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/minUi.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-96">
+              <caret line="58" column="24" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
+              <folding>
+                <element signature="n#div#2;n#!!top" />
+                <element signature="n#div#3;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="346">
+              <caret line="60" column="44" selection-start-line="60" selection-start-column="44" selection-end-line="60" selection-end-column="44" />
+              <folding>
+                <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+>>>>>>> Stashed changes
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/ripple.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="120" column="32" lean-forward="true" selection-start-line="120" selection-start-column="32" selection-end-line="120" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Desktop/ripple-master/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="48" selection-start-line="48" selection-end-line="56" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="425">
               <caret line="246" column="45" lean-forward="true" selection-start-line="246" selection-start-column="45" selection-end-line="246" selection-end-column="45" />
               <folding>
@@ -41,24 +104,42 @@
                 <element signature="n#div#2;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#ul#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
               </folding>
+=======
+            <state relative-caret-position="-2109">
+              <caret line="45" column="20" lean-forward="true" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< Updated upstream
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-732">
               <caret line="44" column="89" lean-forward="true" selection-start-line="44" selection-start-column="89" selection-end-line="44" selection-end-column="89" />
+=======
+        <entry file="file://$PROJECT_DIR$/css/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="130" column="36" lean-forward="true" selection-start-line="130" selection-start-column="36" selection-end-line="130" selection-end-column="36" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< Updated upstream
         <entry file="file://$PROJECT_DIR$/minUi.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="500">
               <caret line="92" column="39" lean-forward="true" selection-start-line="92" selection-start-column="39" selection-end-line="92" selection-end-column="39" />
+=======
+        <entry file="file://$PROJECT_DIR$/js/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -69,12 +150,18 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="package.json" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+<<<<<<< Updated upstream
       <find>text-in</find>
+=======
+      <find>tushug</find>
+      <find>bgColor</find>
+>>>>>>> Stashed changes
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -83,6 +170,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< Updated upstream
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/模板.html" />
         <option value="$PROJECT_DIR$/momo.html" />
@@ -90,10 +178,24 @@
         <option value="$PROJECT_DIR$/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/css/index.css" />
         <option value="$PROJECT_DIR$/css/mui.min.css" />
+=======
+        <option value="$PROJECT_DIR$/css/mui.min.css" />
+        <option value="$PROJECT_DIR$/slideBar.html" />
+        <option value="$PROJECT_DIR$/config.php" />
+        <option value="$PROJECT_DIR$/circle_send.php" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/js/index.js" />
+        <option value="$PROJECT_DIR$/minUi.html" />
+>>>>>>> Stashed changes
         <option value="$PROJECT_DIR$/library.html" />
+        <option value="$PROJECT_DIR$/模板.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/index.css" />
+        <option value="$PROJECT_DIR$/js/ripple.js" />
       </list>
     </option>
   </component>
+<<<<<<< Updated upstream
   <component name="PhpServers">
     <servers />
   </component>
@@ -102,6 +204,13 @@
     <option name="y" value="19" />
     <option name="width" value="1403" />
     <option name="height" value="1040" />
+=======
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-3" />
+    <option name="y" value="45" />
+    <option name="width" value="1278" />
+    <option name="height" value="998" />
+>>>>>>> Stashed changes
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -119,7 +228,11 @@
             <path>
               <item name="campus_polymerization_system_web" type="b2602c69:ProjectViewProjectNode" />
               <item name="campus_polymerization_system_web" type="462c0819:PsiDirectoryNode" />
+<<<<<<< Updated upstream
               <item name="icons" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+>>>>>>> Stashed changes
             </path>
           </expand>
           <select />
@@ -129,12 +242,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< Updated upstream
     <property name="last_opened_file_path" value="$PROJECT_DIR$/icons" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+>>>>>>> Stashed changes
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -142,8 +258,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+<<<<<<< Updated upstream
       <recent name="G:\campus_polymerization_system_web\icons" />
       <recent name="F:\campus_polymerization_system_web\img" />
+=======
+      <recent name="G:\WorkingSpace\apache-Space\apache-Documents\campus_polymerization_system_web\css" />
+      <recent name="G:\WorkingSpace\apache-Space\apache-Documents\campus_polymerization_system_web\js" />
+      <recent name="E:\Kermi\campus_polymerization_system_web\img" />
+      <recent name="C:\Users\Administrator\Desktop\campus_polymerization_system_web\js" />
+>>>>>>> Stashed changes
       <recent name="G:\WorkingSpace\apache-Space\apache-Documents\campus_polymerization_system" />
     </key>
   </component>
@@ -159,13 +282,26 @@
       </list>
     </option>
   </component>
+<<<<<<< Updated upstream
   <component name="RunManager">
     <configuration name="library.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/campus_polymerization_system_web/library.html" useBuiltInWebServerPort="true">
+=======
+  <component name="RunManager" selected="JavaScript Debug.libraryb.html">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/campus_polymerization_system_web/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="libraryb.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/campus_polymerization_system_web/libraryb.html" useBuiltInWebServerPort="true">
+>>>>>>> Stashed changes
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< Updated upstream
         <item itemvalue="JavaScript Debug.library.html" />
+=======
+        <item itemvalue="JavaScript Debug.libraryb.html" />
+        <item itemvalue="JavaScript Debug.index.html" />
+>>>>>>> Stashed changes
       </list>
     </recent_temporary>
   </component>
@@ -181,6 +317,7 @@
       <updated>1558353459775</updated>
       <workItem from="1558353461003" duration="1221000" />
       <workItem from="1558421059354" duration="1837000" />
+<<<<<<< Updated upstream
       <workItem from="1558428554213" duration="4309000" />
       <workItem from="1558492063784" duration="604000" />
       <workItem from="1558514603156" duration="136000" />
@@ -190,6 +327,19 @@
       <workItem from="1559202826003" duration="7236000" />
       <workItem from="1559213658136" duration="251000" />
       <workItem from="1559213922661" duration="11064000" />
+=======
+      <workItem from="1558427344702" duration="913000" />
+      <workItem from="1558570933148" duration="4199000" />
+      <workItem from="1559026962301" duration="4055000" />
+      <workItem from="1559031877164" duration="5747000" />
+      <workItem from="1559089076546" duration="8084000" />
+      <workItem from="1559119302852" duration="4101000" />
+      <workItem from="1559175545466" duration="1281000" />
+      <workItem from="1559198538764" duration="3092000" />
+      <workItem from="1559201974999" duration="4621000" />
+      <workItem from="1559213670033" duration="216000" />
+      <workItem from="1559213899594" duration="11376000" />
+>>>>>>> Stashed changes
     </task>
     <task id="LOCAL-00001" summary="初始化主页">
       <created>1558353973758</created>
@@ -205,6 +355,7 @@
       <option name="project" value="LOCAL" />
       <updated>1558421964137</updated>
     </task>
+<<<<<<< Updated upstream
     <task id="LOCAL-00003" summary="图书馆馆荐公告模块界面设计">
       <created>1559210481236</created>
       <option name="number" value="00003" />
@@ -223,12 +374,64 @@
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12137007" />
+=======
+    <task id="LOCAL-00003" summary="dd">
+      <created>1558574715997</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1558574715997</updated>
+    </task>
+    <task id="LOCAL-00004" summary="dd">
+      <created>1558574852932</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1558574852932</updated>
+    </task>
+    <task id="LOCAL-00005" summary="主页设计">
+      <created>1559123355637</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1559123355637</updated>
+    </task>
+    <task id="LOCAL-00006" summary="加入水波纹点击效果，改良布局">
+      <created>1559216986618</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1559216986618</updated>
+    </task>
+    <task id="LOCAL-00007" summary="修正侧边导航的背景色">
+      <created>1559217055822</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1559217055822</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="50743000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-3" y="45" width="1278" height="998" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15763547" />
+>>>>>>> Stashed changes
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
+<<<<<<< Updated upstream
       <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.09481808" />
+=======
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.40683573" />
+>>>>>>> Stashed changes
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -236,7 +439,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -248,33 +451,105 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="初始化主页" />
-    <MESSAGE value="改个名" />
     <MESSAGE value="初始化框架" />
+<<<<<<< Updated upstream
     <MESSAGE value="图书馆馆荐公告模块界面设计" />
     <option name="LAST_COMMIT_MESSAGE" value="图书馆馆荐公告模块界面设计" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/jquery-3.4.0.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/all.min.css">
+=======
+    <MESSAGE value="改个名" />
+    <MESSAGE value="dd" />
+    <MESSAGE value="主页设计" />
+    <MESSAGE value="加入水波纹点击效果，改良布局" />
+    <MESSAGE value="修正侧边导航的背景色" />
+    <option name="LAST_COMMIT_MESSAGE" value="修正侧边导航的背景色" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/bootstrap.min.js">
+    <entry file="file://$PROJECT_DIR$/js/popper.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+>>>>>>> Stashed changes
+    <entry file="file://$PROJECT_DIR$/js/jquery-3.4.0.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="19">
+          <caret line="1" column="77107" selection-start-line="1" selection-start-column="77107" selection-end-line="1" selection-end-column="77107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/mysqli/mysqli.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="1589" column="64" lean-forward="true" selection-start-line="1589" selection-start-column="64" selection-end-line="1589" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/mui.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="208" column="1" lean-forward="true" selection-start-line="208" selection-start-column="1" selection-end-line="208" selection-end-column="1" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#13897#15048#2" expanded="true" />
+            <element signature="e#15192#16340#2" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="2753" column="4" selection-start-line="2753" selection-start-column="4" selection-end-line="2753" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slideBar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="51" lean-forward="true" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/circle_send.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="74" lean-forward="true" selection-start-line="19" selection-start-column="74" selection-end-line="19" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="9" selection-start-line="10" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libraryb.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1824" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/minUi.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-96">
+          <caret line="58" column="24" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
+          <folding>
+            <element signature="n#div#2;n#!!top" />
+            <element signature="n#div#3;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/exchangeUi.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -290,11 +565,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+=======
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/book.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/library.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2109">
+          <caret line="45" column="20" lean-forward="true" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/ripple.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/ripple.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/模板.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state>
           <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
         </state>
@@ -332,25 +630,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="389">
           <caret line="5" column="133147" lean-forward="true" selection-start-line="5" selection-start-column="133147" selection-end-line="5" selection-end-column="133147" />
+=======
+        <state relative-caret-position="266">
+          <caret line="14" column="63" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/ripple-master/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="48" selection-start-line="48" selection-end-line="56" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="130" column="36" lean-forward="true" selection-start-line="130" selection-start-column="36" selection-end-line="130" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="60" column="44" selection-start-line="60" selection-start-column="44" selection-end-line="60" selection-end-column="44" />
+>>>>>>> Stashed changes
           <folding>
-            <element signature="e#25768#26002#2" expanded="true" />
-            <element signature="e#26806#26959#1" expanded="true" />
-            <element signature="e#26999#27233#1" expanded="true" />
-            <element signature="e#30239#30515#2" expanded="true" />
-            <element signature="e#31347#31500#1" expanded="true" />
-            <element signature="e#31540#31816#1" expanded="true" />
-            <element signature="e#61072#61259#2" expanded="true" />
-            <element signature="e#61488#61624#2" expanded="true" />
-            <element signature="e#62027#62160#2" expanded="true" />
-            <element signature="e#63642#63795#1" expanded="true" />
-            <element signature="e#75788#76018#2" expanded="true" />
-            <element signature="e#76885#77121#2" expanded="true" />
-            <element signature="e#106714#106891#2" expanded="true" />
-            <element signature="e#106937#107114#2" expanded="true" />
+            <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -392,11 +703,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="489">
           <caret line="616" column="14" selection-start-line="616" selection-start-column="2" selection-end-line="616" selection-end-column="14" />
+=======
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="17249" column="12" selection-start-line="17249" selection-start-column="12" selection-end-line="17249" selection-end-column="12" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library.html">
+    <entry file="file://$PROJECT_DIR$/js/ripple.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="425">
           <caret line="246" column="45" lean-forward="true" selection-start-line="246" selection-start-column="45" selection-end-line="246" selection-end-column="45" />
           <folding>
@@ -411,6 +729,10 @@
             <element signature="n#div#2;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#ul#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
+=======
+        <state relative-caret-position="532">
+          <caret line="120" column="32" lean-forward="true" selection-start-line="120" selection-start-column="32" selection-end-line="120" selection-end-column="32" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
