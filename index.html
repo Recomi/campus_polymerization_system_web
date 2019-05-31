@@ -35,8 +35,28 @@
 			height: 43px;
 			width: 43px;
 		}
+        .mui-bar .mui-icon:active {
+            opacity: 1
+        }
 	</style>
+    <script type="text/javascript">
+        mui.init({
+            pullRefresh : {
+                container:"#refreshContainer",//下拉刷新容器标识，querySelector能定位的css选择器均可，比如：id、.class等
+                down : {
+                    style:'circle',//必选，下拉刷新样式，目前支持原生5+ ‘circle’ 样式
+                    color:'#2BD009', //可选，默认“#2BD009” 下拉刷新控件颜色
+                    height:'50px',//可选,默认50px.下拉刷新控件的高度,
+                    range:'100px', //可选 默认100px,控件可下拉拖拽的范围
+                    offset:'0px', //可选 默认0px,下拉刷新控件的起始位置
+                    auto: true,//可选,默认false.首次加载自动上拉刷新一次
+                    callback :function (e) {
 
+                    } //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+                }
+            }
+        });
+    </script>
 </head>
 <body>
 <div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
@@ -87,152 +107,153 @@
             </div>
         </div>
     </aside>
-    <div class="mui-inner-wrap">
+    <div class="mui-inner-wrap" >
         <header class="mui-bar mui-bar-nav">
-            <a class="mui-icon mui-action-menu mui-pull-left" href="#offCanvasSide">
+            <a class="mui-icon mui-action-menu mui-pull-left radio-icon" href="#offCanvasSide" data-ripple="ripple">
 				<img src="icons/menuunfold.svg">
 			</a>
             <h1 class="mui-title">轻云校园</h1>
-			<a class="mui-icon mui-action-menu mui-pull-right">
+			<a class="mui-icon mui-action-menu mui-pull-right radio-icon" data-ripple="ripple">
 				<img src="icons/search.svg">
 			</a>
         </header>
 
-        <div id="main" class="mui-content bg-content">
-
-			<div class="mui-slider">
-				<div class="mui-slider-group mui-slider-loop">
-					<!--支持循环，需要重复图片节点-->
-					<div class="mui-slider-item mui-slider-item-duplicate">
-						<a href="#"><img src="images/4.jpg" /></a>
-					</div>
-					<div class="mui-slider-item">
-						<a href="#"><img src="images/1.jpg" /></a>
-					</div>
-					<div class="mui-slider-item">
-						<a href="#"><img src="images/2.jpg" /></a>
-					</div>
-					<div class="mui-slider-item">
-						<a href="#"><img src="images/3.jpg" /></a>
-					</div>
-					<div class="mui-slider-item">
-						<a href="#"><img src="images/4.jpg" /></a>
-					</div>
-					<!--支持循环，需要重复图片节点-->
-					<div class="mui-slider-item mui-slider-item-duplicate">
-						<a href="#"><img src="images/1.jpg" /></a>
-					</div>
-				</div>
-			</div>
-			<div class="mui-content">
-				<div class="mui-card">
-					<div class="mui-row">
-						<a>
-							<a href="library.html" class="mui-col-sm-2 mui-col-xs-4 mui-text-center" data-ripple="ripple">
-                                <img class="mt-3" src="icons/ic_library.png"/>
-								<p class="m-2">图书馆</p>
-							</a>
-						</a>
-						<a>
-                            <a href="#" class="mui-col-sm-2 mui-col-xs-4 mui-text-center" data-ripple="ripple">
-                                <img class="mt-3" src="icons/ic_curriculum.png"/>
-								<p class="m-2">课程表</p>
-							</a>
-						</a>
-						<a>
-							<a href="#" class="mui-col-sm-2 mui-col-xs-4 mui-text-center" data-ripple="ripple">
-                                <img class="mt-3" src="icons/job.png"/>
-								<p class="m-2">求职</p>
-							</a>
-						</a>
-						<a>
-							<a href="#" class="mui-col-sm-2 mui-col-xs-4 mui-text-center" data-ripple="ripple">
-                                <img class="mt-3" src="icons/ic_associations.png"/>
-								<p class="m-2">社团</p>
-							</a>
-						</a>
-						<a>
-							<a href="#" class="mui-col-sm-2 mui-col-xs-4 mui-text-center" data-ripple="ripple">
-                                <img class="mt-3" src="icons/ic_cricle.png"/>
-								<p class="m-2">圈子</p>
-							</a>
-						</a>
-						<a>
-							<a href="#" class="mui-col-sm-2 mui-col-xs-4 mui-text-center" data-ripple="ripple">
-                                <img class="mt-3" src="icons/ic_curriculum.png"/>
-								<p class="m-2">未定</p>
-							</a>
-						</a>
-					</div>
-				</div>
-			</div>
-			<script type="text/javascript">
-				new Ripple()
-			</script>
-			<div class="mui-card " data-ripple="ripple">
-				<div class="mui-card-header mui-card-media">
-					<img src="icons/ic_book.svg"/>
-					<div class="mui-media-body " style="line-height: 36px;">
-						<p>今日课程</p>
-					</div>
-					<div class="mui-card-content">
-						<div class="mui-row">
-							<div class="mui-col-sm-6 mui-col-xs-6 mui-text-center">
-								<p>数据结构和算法（1-2节）</p>
-								<p>高等数学（3-4节）</p>
-								<p>体育与运动（5-6节）</p>
-							</div>
-							<div class="mui-col-sm-6 mui-col-xs-6 mui-text-center">
-								<p>Java高级设计（7-8节）</p>
-								<p>晚修（9-10节）</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="mui-card">
-				<div class="mui-card-header mui-card-media">
-					<img src="icons/ic_weather.svg"/>
-					<div class="mui-media-body " style="line-height: 36px;">
-						<p>近况天气</p>
-					</div>
-					<div class="mui-card-content">
-						<div class="mui-row">
-							<div class=" mui-col-xs-3 mui-text-center">
+        <div id="refreshContainer" class="mui-content bg-content">
+            <div id="main" class="">
+                <div class="mui-slider">
+                    <div class="mui-slider-group mui-slider-loop">
+                        <!--支持循环，需要重复图片节点-->
+                        <div class="mui-slider-item mui-slider-item-duplicate">
+                            <a href="#"><img src="images/4.jpg" /></a>
+                        </div>
+                        <div class="mui-slider-item">
+                            <a href="#"><img src="images/1.jpg" /></a>
+                        </div>
+                        <div class="mui-slider-item">
+                            <a href="#"><img src="images/2.jpg" /></a>
+                        </div>
+                        <div class="mui-slider-item">
+                            <a href="#"><img src="images/3.jpg" /></a>
+                        </div>
+                        <div class="mui-slider-item">
+                            <a href="#"><img src="images/4.jpg" /></a>
+                        </div>
+                        <!--支持循环，需要重复图片节点-->
+                        <div class="mui-slider-item mui-slider-item-duplicate">
+                            <a href="#"><img src="images/1.jpg" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mui-content">
+                    <div class="mui-card">
+                        <div class="mui-row">
+                            <a>
+                                <a href="library.html" class="mui-col-sm-2 mui-col-xs-4 mui-text-center" data-ripple="ripple">
+                                    <img class="mt-3" src="icons/ic_library.png"/>
+                                    <p class="m-2">图书馆</p>
+                                </a>
+                            </a>
+                            <a>
+                                <a href="#" class="mui-col-sm-2 mui-col-xs-4 mui-text-center" data-ripple="ripple">
+                                    <img class="mt-3" src="icons/ic_curriculum.png"/>
+                                    <p class="m-2">课程表</p>
+                                </a>
+                            </a>
+                            <a>
+                                <a href="#" class="mui-col-sm-2 mui-col-xs-4 mui-text-center" data-ripple="ripple">
+                                    <img class="mt-3" src="icons/job.png"/>
+                                    <p class="m-2">求职</p>
+                                </a>
+                            </a>
+                            <a>
+                                <a href="#" class="mui-col-sm-2 mui-col-xs-4 mui-text-center" data-ripple="ripple">
+                                    <img class="mt-3" src="icons/ic_associations.png"/>
+                                    <p class="m-2">社团</p>
+                                </a>
+                            </a>
+                            <a>
+                                <a href="#" class="mui-col-sm-2 mui-col-xs-4 mui-text-center" data-ripple="ripple">
+                                    <img class="mt-3" src="icons/ic_cricle.png"/>
+                                    <p class="m-2">圈子</p>
+                                </a>
+                            </a>
+                            <a>
+                                <a href="#" class="mui-col-sm-2 mui-col-xs-4 mui-text-center" data-ripple="ripple">
+                                    <img class="mt-3" src="icons/ic_curriculum.png"/>
+                                    <p class="m-2">未定</p>
+                                </a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    new Ripple()
+                </script>
+                <div class="mui-card " data-ripple="ripple">
+                    <div class="mui-card-header mui-card-media">
+                        <img src="icons/ic_book.svg"/>
+                        <div class="mui-media-body " style="line-height: 36px;">
+                            <p>今日课程</p>
+                        </div>
+                        <div class="mui-card-content">
+                            <div class="mui-row">
+                                <div class="mui-col-sm-6 mui-col-xs-6 mui-text-center">
+                                    <p>数据结构和算法（1-2节）</p>
+                                    <p>高等数学（3-4节）</p>
+                                    <p>体育与运动（5-6节）</p>
+                                </div>
+                                <div class="mui-col-sm-6 mui-col-xs-6 mui-text-center">
+                                    <p>Java高级设计（7-8节）</p>
+                                    <p>晚修（9-10节）</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mui-card" data-ripple="ripple">
+                    <div class="mui-card-header mui-card-media">
+                        <img src="icons/ic_weather.svg"/>
+                        <div class="mui-media-body " style="line-height: 36px;">
+                            <p>近况天气</p>
+                        </div>
+                        <div class="mui-card-content">
+                            <div class="mui-row">
+                                <div class=" mui-col-xs-3 mui-text-center">
 							<span id="">
 								<img src="icons/ic_weather_cloudy.svg"/>
 							</span>
-								<p>晴转多云</p>
-								<p>今天15°C</p>
-							</div>
-							<div class=" mui-col-xs-3 mui-text-center">
+                                    <p>晴转多云</p>
+                                    <p>今天15°C</p>
+                                </div>
+                                <div class=" mui-col-xs-3 mui-text-center">
 							<span id="">
 								<img src="icons/ic_weather_cloudy.svg "/>
 							</span>
-								<p>晴转多云</p>
-								<p>明天15°C</p>
-							</div>
-							<div class=" mui-col-xs-3 mui-text-center">
+                                    <p>晴转多云</p>
+                                    <p>明天15°C</p>
+                                </div>
+                                <div class=" mui-col-xs-3 mui-text-center">
 							<span id="">
 								<img src="icons/ic_weather_fine.svg"/>
 							</span>
-								<p>多云转晴</p>
-								<p>后天25°C</p>
-							</div>
-							<div class="mui-col-xs-3 mui-text-center">
+                                    <p>多云转晴</p>
+                                    <p>后天25°C</p>
+                                </div>
+                                <div class="mui-col-xs-3 mui-text-center">
 							<span id="">
 								<img src="icons/ic_weather_fine.svg"/>
 							</span>
-								<p>多云转晴</p>
-								<p>周六26°C</p>
-							</div>
+                                    <p>多云转晴</p>
+                                    <p>周六26°C</p>
+                                </div>
 
-						</div>
-					</div>
-				</div>
-			</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mui-off-canvas-backdrop"></div>
         </div>
-        <div class="mui-off-canvas-backdrop"></div>
     </div>
 
 </div>
