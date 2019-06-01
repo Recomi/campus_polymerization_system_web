@@ -41,7 +41,7 @@
                 return true
             } else {
                 return false
-            }       
+            }
         },
 
         //获取当前点对象的位置等信息
@@ -52,6 +52,17 @@
                 range: range,
                 x: e.clientX - pos.left - range / 2,
                 y: e.clientY - pos.top - range / 2
+            }
+        },
+
+        //获取当前点对象的位置等信息
+        getTouchPosition : function(e) {
+            var pos = this.getBoundingClientRect()
+            , range = Math.max(pos.width, pos.height);
+            return {
+                range: range,
+                x: e.changedTouches[0].clientX - pos.left - range / 2,
+                y: e.changedTouches[0].clientY - pos.top - range / 2
             }
         },
         //载入样式
@@ -65,7 +76,7 @@
                 var link = doc.createElement('link');
                 link.href = path + 'need/ripple.css';
                 link.type = 'text/css';
-                link.rel = 'styleSheet'
+                link.rel = 'styleSheet';
                 link.id = 'ripplecss';
                 return link;
             }());
@@ -89,6 +100,32 @@
                     // e.stopPropagation();
 
                     var position = _this.getPosition.call(this,e)
+                    , span = doc.createElement("span");
+                    span.className = 'ripple';
+                    span.style.top = position.y+"px";
+                    span.style.left = position.x+"px";
+                    span.style.width = position.range+"px";
+                    span.style.height = position.range+"px";
+                    span.style.animationDuration = _this.option.speed+"s";
+                    span.style.background = _this.option.bgColor;
+                    span.style.opacity = _this.option.opacity;
+                    span.style.pointerEvents= "none";
+
+                    //动画完成后删除节点
+                    span.addEventListener("animationend",function(){
+                        this.parentNode.removeChild(this);
+                    },false);
+                    //插入水波纹节点
+                    this.appendChild(span)
+
+                },false);
+
+                this.elements[i].addEventListener("touchstart",function(e){
+
+                    //终止事件冒泡
+                    // e.stopPropagation();
+
+                    var position = _this.getTouchPosition.call(this,e)
                     , span = doc.createElement("span");
                     span.className = 'ripple';
                     span.style.top = position.y+"px";
