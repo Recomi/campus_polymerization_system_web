@@ -1,34 +1,54 @@
 <!doctype html>
 <html>
-
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
-		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<link href="css/mui.min.css" rel="stylesheet" />
-	</head>
-	<style type="text/css">
-		#exchange_img {
-			margin-left: 5px;
-		}
-		
-		#exchange_img img {
-			height: 73px;
-			width: 93px;
-		}
-		
-		.mui-row #pText {
-			border: 1px solid dodgerblue;
-			color: dodgerblue;
-		}
-	</style>
-
-	<body>
+		<title>轻云校园</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/all.min.css">
+		<link rel="stylesheet" href="css/ripple.css">
+		<script src="js/jquery-3.4.0.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<script type="text/javascript" src="js/ripple.js" charset="UTF-8"></script>
+		<!--    mui-->
+		<link rel="stylesheet" href="css/mui.min.css">
 		<script src="js/mui.min.js"></script>
 		<script type="text/javascript">
 			mui.init()
 		</script>
-		<div class="mui-card " style="margin: 0;">
+		<style type="text/css">
+			#list {
+				/*避免导航边框和列表背景边框重叠，看起来像两条边框似得；*/
+				margin-top: -1px;
+			}
+		</style>
+	</head>
+	<style type="text/css">
+		#exchange_img {
+			/*margin-left: 5px;*/
+		}
+
+		#exchange_img img {
+			/*height: 73px;*/
+			width: 100%;
+			/*max-width: 300px;*/
+		}
+
+		.pText {
+			border: 1px solid dodgerblue;
+			color: dodgerblue;
+		}
+		.mui-card-header:after {
+			height: 0;
+		}
+	</style>
+
+	<body>
+		<div class="mui-card mb-2" style="margin: 0;" data-ripple="ripple">
 			<div class="mui-card-header mui-card-media ">
 				<img src="icons/ic_cricle.png" />
 				<div class="mui-media-body">
@@ -36,84 +56,62 @@
 					<p>今天发帖：2451</p>
 				</div>
 			</div>
-			<div class="mui-row">
-				<div class="mui-col-xs-2 mui-text-center">
-					<p id="pText">推荐</p>
+			<div class="mui-card-content p-2 pl-4">
+				<div class="row mt-2 mb-2 flex-nowrap text-nowrap align-items-center">
+					<span class="pText pl-3 pr-3">推荐</span>
+					<div class="text-truncate">【2019年5月24日】MIUI第417周发布MIUI第417周发布MIUI第417周发布MIUI第417周发布MIUI第417周发布MIUI第417周发布</div>
 				</div>
-				<div class="mui-col-xs-10 mui-text-center">
-					<p>【2019年5月24日】MIUI第417周发布</p>
+				<div class="row mt-2 mb-2">
+					<span class="pText pl-3 pr-3">推荐</span>
+					<span>【2019年5月24日】MIUI第417周发布</span>
 				</div>
-			</div>
-			<div class="mui-row">
-				<div class="mui-col-xs-2 mui-text-center">
-					<p id="pText">推荐</p>
-				</div>
-				<div class="mui-col-xs-10 mui-text-center">
-					<p>【2019年5月24日】MIUI第417周发布</p>
-				</div>
-			</div>
-			<div class="mui-row">
-				<div class="mui-col-xs-2 mui-text-center">
-					<p id="pText">推荐</p>
-				</div>
-				<div class="mui-col-xs-10 mui-text-center">
-					<p>【2019年5月24日】MIUI第417周发布</p>
+				<div class="row mt-2 mb-2">
+					<span class="pText pl-3 pr-3">推荐</span>
+					<span>【2019年5月24日】MIUI第417周发布</span>
 				</div>
 			</div>
 		</div>
-		<div class="mui-card" style="margin: 10px 0;">
-			<div class="mui-card-header mui-card-media">
-
+		<div class="mui-card ml-0 mr-0" data-ripple="ripple">
+			<div class="mui-card-header mui-card-media border-0 p-3">
 				<img src="icons/ic_cricle.png" />
 				<div class="mui-media-body">
 					周坤昆
 					<p>社区版主</p>
 				</div>
-
 			</div>
-			<h4>摄影日记：记忆里的你（小清新人像）</h4>
-			<div class="mui-row" style="" id="exchange_img">
-				<div class="mui-col-xs-4">
+			<p class="text-dark pl-3 pr-3 text-break">摄影日记：记忆里的你（小清新人像）</p>
+			<div class="row img-thumbnail border-0 m-0 p-2" id="exchange_img">
+				<div class="col-4 text-center p-1">
 					<img src="images/2.jpg" />
 				</div>
-				<div class="mui-col-xs-4">
+				<div class="col-4 text-center p-1">
 					<img src="images/2.jpg" />
 				</div>
-				<div class="mui-col-xs-4">
+				<div class="col-4 text-center p-1">
 					<img src="images/2.jpg" />
 				</div>
 			</div>
-			<div class="mui-row">
-				<div class="mui-col-xs-2 mui-text-center ">
-					<p id="pText">推荐</p>
-				</div>
-				<div class="mui-col-xs-10 " style="padding:0 10px;">
-					<div class="mui-row">
-						<div class="mui-col-xs-2">
-							<p>昨天</p>
-						</div>
-						<div class="mui-col-xs-3">
-							
-							<p>
-								<span id="#" >
-									<img src="icons/ic_page_view.svg"/>
-									288
-								</span>
-							</p>                               
-							
-						</div>
-						<div class="mui-col-xs-7">
-							<p>
-								<span id="#">
-									<img src="icons/ic_leave_word.svg"/>2889
-								</span>
-							</p>
-						</div>
-					</div>
-				</div>
+			<div class="flex-row p-2 pl-3 pr-3 align-items-center text-black-50">
+				<!--<span class="pText pl-1 pr-1">推荐</span>-->
+				<span>2018-01-04</span>
+				<span class="float-right ml-2 mr-2">
+					<img src="icons/ic_page_view.svg"/>
+					<span>288</span>
+				</span>
+				<span class="float-right ml-2">
+					<img src="icons/ic_leave_word.svg"/>
+					<span id="#">2889</span>
+				</span>
 			</div>
 		</div>
-
 	</body>
-
 </html>
+
+<script type="text/javascript">
+	new Ripple({
+		opacity : 0.2,  //水波纹透明度
+		speed : 0.6,      //水波纹扩散速度
+		bgColor : "#111", //水波纹颜色
+		cursor : false  //是否显示手型指针
+	})
+</script>
