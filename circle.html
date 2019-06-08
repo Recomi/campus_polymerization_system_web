@@ -8,12 +8,13 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/all.min.css">
-		<link rel="stylesheet" href="css/ripple.css">
+		<link rel="stylesheet" href="css/waves.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
 		<script src="js/jquery-3.4.0.min.js"></script>
 		<script src="js/popper.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/index.css">
-		<script type="text/javascript" src="js/ripple.js" charset="UTF-8"></script>
+		<script type="text/javascript" src="js/waves.js"></script>
+		<script type="text/javascript" src="js/vue.min.js"></script>
 		<!--    mui-->
 		<link rel="stylesheet" href="css/mui.min.css">
 		<script src="js/mui.min.js"></script>
@@ -31,13 +32,11 @@
 		#exchange_img {
 			/*margin-left: 5px;*/
 		}
-
 		#exchange_img img {
 			/*height: 73px;*/
 			width: 100%;
 			/*max-width: 300px;*/
 		}
-
 		.pText {
 			border: 1px solid dodgerblue;
 			color: dodgerblue;
@@ -45,73 +44,185 @@
 		.mui-card-header:after {
 			height: 0;
 		}
+		.waves-circle-left {
+			border-radius: 50% 0 0 50%;
+		}
+		.waves-circle-right {
+			border-radius:0 50% 50% 0 ;
+		}
+		#float-icons {
+			transition: .5s;
+		}
 	</style>
 
 	<body>
-		<div class="mui-card mb-2" style="margin: 0;" data-ripple="ripple">
-			<div class="mui-card-header mui-card-media ">
-				<img src="icons/ic_cricle.png" />
-				<div class="mui-media-body">
-					贴图社区
-					<p>今天发帖：2451</p>
-				</div>
-			</div>
-			<div class="mui-card-content p-2 pl-4">
-				<div class="row mt-2 mb-2 flex-nowrap text-nowrap align-items-center">
-					<span class="pText pl-3 pr-3">推荐</span>
-					<div class="text-truncate">【2019年5月24日】MIUI第417周发布MIUI第417周发布MIUI第417周发布MIUI第417周发布MIUI第417周发布MIUI第417周发布</div>
-				</div>
-				<div class="row mt-2 mb-2">
-					<span class="pText pl-3 pr-3">推荐</span>
-					<span>【2019年5月24日】MIUI第417周发布</span>
-				</div>
-				<div class="row mt-2 mb-2">
-					<span class="pText pl-3 pr-3">推荐</span>
-					<span>【2019年5月24日】MIUI第417周发布</span>
-				</div>
-			</div>
+	<div class="mui-scroll-wrapper mui-content" id="refreshContainer">
+		<div id="float-icons" style="z-index: 1001;border-radius: 2rem" class="position-fixed row r-0 b-0 mr-3 mb-2 bg-info ">
+			<i style="font-size: larger " class="fa fa-angle-up waves-circle-left float-icon d-block shadow-none bg-transparent text-light scrollToTop"></i>
+			<i style="font-size: larger " class="fas fa-feather waves-circle-right float-icon d-block bg-transparent shadow-none text-light"></i>
 		</div>
-		<div class="mui-card ml-0 mr-0" data-ripple="ripple">
-			<div class="mui-card-header mui-card-media border-0 p-3">
-				<img src="icons/ic_cricle.png" />
-				<div class="mui-media-body">
-					周坤昆
-					<p>社区版主</p>
+
+		<div id="main" class="mui-scroll">
+			<div class="mui-card mb-2 waves d-block" style="margin: 0;" >
+				<div class="mui-card-header mui-card-media ">
+					<img src="icons/ic_cricle.png" />
+					<div class="mui-media-body">
+						圈子
+						<p>今天发帖：2451</p>
+					</div>
+				</div>
+				<div class="mui-card-content p-2 pl-4">
+					<div class="row mt-2 mb-2 flex-nowrap text-nowrap align-items-center">
+						<span class="pText pl-3 pr-3">热门</span>
+						<div class="text-truncate">【2019年5月24日】MIUI第417周发布MIUI第417周发布MIUI第417周发布MIUI第417周发布MIUI第417周发布MIUI第417周发布</div>
+					</div>
+					<div class="row mt-2 mb-2">
+						<span class="pText pl-3 pr-3">热门</span>
+						<span>【2019年5月24日】MIUI第417周发布</span>
+					</div>
+					<div class="row mt-2 mb-2">
+						<span class="pText pl-3 pr-3">热门</span>
+						<span>【2019年5月24日】MIUI第417周发布</span>
+					</div>
 				</div>
 			</div>
-			<p class="text-dark pl-3 pr-3 text-break">摄影日记：记忆里的你（小清新人像）</p>
-			<div class="row img-thumbnail border-0 m-0 p-2" id="exchange_img">
-				<div class="col-4 text-center p-1">
-					<img src="images/2.jpg" />
-				</div>
-				<div class="col-4 text-center p-1">
-					<img src="images/2.jpg" />
-				</div>
-				<div class="col-4 text-center p-1">
-					<img src="images/2.jpg" />
-				</div>
+			<div class="loading text-center m-5">
+				<img class="d-block m-auto p-2" src="icons/gooey-ring-spinner.svg">
+				<span class="text-info">Loading...</span>
 			</div>
-			<div class="flex-row p-2 pl-3 pr-3 align-items-center text-black-50">
-				<!--<span class="pText pl-1 pr-1">推荐</span>-->
-				<span>2018-01-04</span>
-				<span class="float-right ml-2 mr-2">
-					<img src="icons/ic_page_view.svg"/>
-					<span>288</span>
-				</span>
-				<span class="float-right ml-2">
-					<img src="icons/ic_leave_word.svg"/>
-					<span id="#">2889</span>
-				</span>
-			</div>
+			<ul class="list-unstyled" id="threads">
+					<li v-for="item in data" class="mui-card mb-1 m-0 shadow-none waves" >
+						<div class="mui-card-header mui-card-media border-0 p-3">
+							<img src="icons/ic_cricle.png" />
+							<div class="mui-media-body">
+								user_id:{{item.user_id}}
+								<p>社区版主</p>
+							</div>
+						</div>
+						<p class="text-dark pl-3 pr-3 text-break">{{item.content}}</p>
+						<div class="row img-thumbnail border-0 m-0 p-2" id="exchange_img">
+							<div class="col-4 text-center p-1 waves">
+								<img src="images/2.jpg" />
+							</div>
+							<div class="col-4 text-center p-1 waves">
+								<img src="images/2.jpg" />
+							</div>
+							<div class="col-4 text-center p-1 waves">
+								<img src="images/2.jpg" />
+							</div>
+						</div>
+						<div class="flex-row p-1 pl-3 pr-3 align-items-center text-black-50">
+							<!--<span class="pText pl-1 pr-1">推荐</span>-->
+							<span>{{item.time}}</span>
+							<span class="float-right ml-2 mr-2">
+						<img src="icons/ic_page_view.svg"/>
+						<span>288</span>
+					</span>
+							<span class="float-right ml-2">
+						<img src="icons/ic_leave_word.svg"/>
+						<span id="#">2889</span>
+					</span>
+						</div>
+					</li>
+				</ul>
 		</div>
+	</div>
 	</body>
 </html>
-
+<script>
+	jQuery(document).ready(function ($) {
+		$.ajax({
+			url: "circle_getThreads.php",
+			type: "GET",
+			// async:false,    //异步
+			beforeSend:function() {
+				$("#threads").hide();
+			},
+			success: function (data) {
+				var jsonArr = jQuery.parseJSON(data);
+				//设置数据
+				new Vue({
+					el:'#threads',
+					data:jsonArr,
+				});
+				$("#threads").show();
+				$(".loading").hide();
+			},
+			error:function (msg) {
+				mui.alert("获取信息失败，请检查网络");
+			},
+			complete:function () {
+			}
+		});
+	});
+</script>
 <script type="text/javascript">
-	new Ripple({
-		opacity : 0.2,  //水波纹透明度
-		speed : 0.6,      //水波纹扩散速度
-		bgColor : "#111", //水波纹颜色
-		cursor : false  //是否显示手型指针
-	})
+	Waves.init();
+	Waves.attach('.waves');
+
+	Waves.attach('.flat-icon', ['waves-circle']);
+	Waves.attach('.float-icon', ['waves-circle', 'waves-float']);
+	Waves.attach('.float-icon-light', ['waves-circle', 'waves-float', 'waves-light']);
+</script>
+<script>
+	mui('.mui-scroll-wrapper').scroll({
+		scrollY: true, //是否竖向滚动
+		deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+	});
+	mui.init({
+		pullRefresh : {
+			container:"#refreshContainer",//下拉刷新容器标识，querySelector能定位的css选择器均可，比如：id、.class等
+			down : {
+				style:'circle',//必选，下拉刷新样式，目前支持原生5+ ‘circle’ 样式
+				color:'#2BD009', //可选，默认“#2BD009” 下拉刷新控件颜色
+				height:'50px',//可选,默认50px.下拉刷新控件的高度,
+				range:'100px', //可选 默认100px,控件可下拉拖拽的范围
+				offset:'0px', //可选 默认0px,下拉刷新控件的起始位置
+				auto: true,//可选,默认false.首次加载自动上拉刷新一次
+				callback :function () {
+
+				} //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+			}
+		}
+	});
+	$(".scrollToTop").on("tap", function (e) {
+		scrollToTop();
+	});
+	function scrollToTop() {
+		mui('#refreshContainer').pullRefresh().scrollTo(0, 0, 1000);
+	}
+</script>
+<script>
+	jQuery(document).ready(function ($) {
+		//向上手势，页面下滑
+		$(window).on("swipeup",function (e) {
+			// $('#float-icons').addClass('animated fadeOutUp invisible');
+			$("#float-icons").css({
+				transform:'translateY(' + $("#float-icons").height() * 2 + 'px)'
+			});
+		});
+		//向下手势，页面上滑
+		$(window).on("swipedown",function (e) {
+			// $('#float-icons').removeClass('fadeInDown invisible');
+			$("#float-icons").css({
+				transform:'translateY(0px)'
+			});
+		});
+		var windowTop = 0;//初始话可视区域距离页面顶端的距离
+		$(window).scroll(function (e) {
+			var scrolled = $(this).scrollTop();
+			if (scrolled >= windowTop) {
+				if (!$('#float-icons').hasClass('fadeOutUp')) {
+					// $('#float-icons').addClass('animated fadeOutUp');
+					// $('#float-icons').removeClass('fadeInDown');
+					// $('#float-icons').css('margin-top','45px');
+				}
+				windowTop = scrolled;
+				// mui.toast("下滑");
+				mui.toast(windowTop);
+			} else if (scrolled < 100) {
+				mui.toast("到顶");
+			}
+		});
+	});
 </script>

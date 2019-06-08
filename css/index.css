@@ -15,6 +15,15 @@
 ::-webkit-scrollbar-thumb:window-inactive {
     background: rgb(3, 215, 185);
 }
+.bg-colorPrimary {
+    background: #48afaf;
+}
+.bg-colorPrimaryDark {
+
+}
+.bg-colorAccent {
+    background-color: #3F51B5 !important;
+}
 .bg-content {
     background-color: #f1f3f4!important;
 }
@@ -32,6 +41,33 @@ a:hover {
 }
 li{
     list-style: none;
+}
+.medium {
+font-size: medium!important;
+}
+.large {
+font-size: large!important;
+}
+.larger {
+font-size: larger!important;
+}
+.x-large {
+font-size: x-large!important;
+}
+.r-0 {
+    right: 0!important;
+}
+.l-0 {
+    left: 0!important;
+}
+.t-0 {
+    top: 0!important;
+}
+.b-0 {
+    bottom: 0!important;
+}
+.r-0 {
+    right: 0!important;
 }
 .m-2_5 {
 	  margin: 0.75rem !important;
