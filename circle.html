@@ -56,10 +56,12 @@
 	</style>
 
 	<body>
-	<div class="mui-scroll-wrapper mui-content" id="refreshContainer">
+	<div class="mui-scroll-wrapper mui-content bg-content" id="refreshContainer">
 		<div id="float-icons" style="z-index: 1001;border-radius: 2rem" class="position-fixed row r-0 b-0 mr-3 mb-2 bg-info ">
 			<i style="font-size: larger " class="fa fa-angle-up waves-circle-left float-icon d-block shadow-none bg-transparent text-light scrollToTop"></i>
-			<i style="font-size: larger " class="fas fa-feather waves-circle-right float-icon d-block bg-transparent shadow-none text-light"></i>
+			<a href="circle_newThread.html">
+				<i style="font-size: larger " class="fas fa-feather waves-circle-right float-icon d-block bg-transparent shadow-none text-light"></i>
+			</a>
 		</div>
 
 		<div id="main" class="mui-scroll">
@@ -90,8 +92,8 @@
 				<img class="d-block m-auto p-2" src="icons/gooey-ring-spinner.svg">
 				<span class="text-info">Loading...</span>
 			</div>
-			<ul class="list-unstyled" id="threads">
-					<li v-for="item in data" class="mui-card mb-1 m-0 shadow-none waves" >
+			<ul class="list-unstyled w-100" id="threads">
+					<li v-for="item in data" class="mui-card mb-1 m-0 w-100 shadow-none waves" >
 						<div class="mui-card-header mui-card-media border-0 p-3">
 							<img src="icons/ic_cricle.png" />
 							<div class="mui-media-body">
@@ -100,17 +102,7 @@
 							</div>
 						</div>
 						<p class="text-dark pl-3 pr-3 text-break">{{item.content}}</p>
-						<div class="row img-thumbnail border-0 m-0 p-2" id="exchange_img">
-							<div class="col-4 text-center p-1 waves">
-								<img src="images/2.jpg" />
-							</div>
-							<div class="col-4 text-center p-1 waves">
-								<img src="images/2.jpg" />
-							</div>
-							<div class="col-4 text-center p-1 waves">
-								<img src="images/2.jpg" />
-							</div>
-						</div>
+
 						<div class="flex-row p-1 pl-3 pr-3 align-items-center text-black-50">
 							<!--<span class="pText pl-1 pr-1">推荐</span>-->
 							<span>{{item.time}}</span>
@@ -160,7 +152,7 @@
 	Waves.init();
 	Waves.attach('.waves');
 
-	Waves.attach('.flat-icon', ['waves-circle']);
+	Waves.attach('.float-icon', ['waves-circle']);
 	Waves.attach('.float-icon', ['waves-circle', 'waves-float']);
 	Waves.attach('.float-icon-light', ['waves-circle', 'waves-float', 'waves-light']);
 </script>
@@ -208,21 +200,10 @@
 				transform:'translateY(0px)'
 			});
 		});
-		var windowTop = 0;//初始话可视区域距离页面顶端的距离
-		$(window).scroll(function (e) {
-			var scrolled = $(this).scrollTop();
-			if (scrolled >= windowTop) {
-				if (!$('#float-icons').hasClass('fadeOutUp')) {
-					// $('#float-icons').addClass('animated fadeOutUp');
-					// $('#float-icons').removeClass('fadeInDown');
-					// $('#float-icons').css('margin-top','45px');
-				}
-				windowTop = scrolled;
-				// mui.toast("下滑");
-				mui.toast(windowTop);
-			} else if (scrolled < 100) {
-				mui.toast("到顶");
-			}
-		});
+	});
+</script>
+<script type="text/javascript">
+	mui('body').on('tap','a',function(){
+		document.location.href=this.href;
 	});
 </script>

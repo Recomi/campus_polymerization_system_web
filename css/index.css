@@ -16,13 +16,19 @@
     background: rgb(3, 215, 185);
 }
 .bg-colorPrimary {
-    background: #48afaf;
+    background: #48afaf!important;
+}
+.text-colorPrimary {
+    color: #48afaf!important;
 }
 .bg-colorPrimaryDark {
 
 }
 .bg-colorAccent {
     background-color: #3F51B5 !important;
+}
+.text-colorAccent {
+    color: #3F51B5 !important;
 }
 .bg-content {
     background-color: #f1f3f4!important;
@@ -74,6 +80,9 @@ font-size: x-large!important;
 }
 .ml-2_5 {
 	  margin-left: 0.75rem !important;
+}
+.p-2_5 {
+	  padding: 0.75rem !important;
 }
 
 .click-light {
