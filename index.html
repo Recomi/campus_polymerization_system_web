@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/ripple.css">
+    <link rel="stylesheet" href="css/waves.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
     <script src="js/jquery-3.4.0.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-	<script type="text/javascript" src="js/ripple.js" charset="UTF-8"></script>
-<!--    mui-->
+    <script type="text/javascript" src="js/waves.js"></script>
+    <script type="text/javascript" src="js/vue.min.js"></script>
+    <!--    mui-->
     <link rel="stylesheet" href="css/mui.min.css">
 	<script src="js/mui.min.js"></script>
     <script type="text/javascript">
@@ -84,8 +86,7 @@
     <aside class="mui-off-canvas-left bg-slide" id="offCanvasSide">
         <div class="mui-scroll-wrapper">
             <div class="mui-scroll">
-				<div style="" class="item item-shadow slide-user" data-ripple="ripple">
-
+				<div style="" class="item item-shadow slide-user w-100 waves">
 					<li class="pb-2">
 						<img id="userIcon" class="radio-icon headicon-mine ml-2_5" src="img/headicon_default.jpg">
 					</li>
@@ -99,15 +100,15 @@
 					</div>
 				</div>
 				<ul class="list-group">
-					<li class="list-group-item list-item-small item border-0" data-ripple="ripple">
+					<li class="list-group-item list-item-small item border-0 waves">
 						<img class="list-icon" src="icons/search.svg" />
 						<span class="list-icon-title">Search</span>
 					</li>
-					<li class="list-group-item list-item-small item border-0" data-ripple="ripple">
+					<li class="list-group-item list-item-small item border-0 waves">
 						<img class="list-icon" src="icons/search.svg" />
 						<span class="list-icon-title">Search</span>
 					</li>
-					<li class="list-group-item list-item-small item border-0" data-ripple="ripple">
+					<li class="list-group-item list-item-small item border-0 waves">
 						<img class="list-icon" src="icons/search.svg" />
 						<span class="list-icon-title">Search</span>
 					</li>
@@ -116,11 +117,11 @@
 				<div class="list-underline"></div>
 
 				<ul class="list-group">
-					<li class="list-group-item list-item-small item border-0" data-ripple="ripple">
+					<li class="list-group-item list-item-small item border-0 waves">
 						<img class="list-icon" src="icons/search.svg" />
 						<span class="list-icon-title">Search</span>
 					</li>
-					<li class="list-group-item list-item-small item border-0" data-ripple="ripple">
+					<li class="list-group-item list-item-small item border-0 waves">
 						<img class="list-icon" src="icons/search.svg" />
 						<span class="list-icon-title">Search</span>
 					</li>
@@ -130,11 +131,11 @@
     </aside>
     <div class="mui-inner-wrap" >
         <header class="mui-bar mui-bar-nav">
-            <a class="mui-icon mui-action-menu mui-pull-left radio-icon" href="#offCanvasSide" data-ripple="ripple">
+            <a class="mui-icon mui-action-menu mui-pull-left radio-icon waves" href="#offCanvasSide">
 				<img src="icons/menuunfold.svg">
 			</a>
             <h1 class="mui-title">轻云校园</h1>
-			<a class="mui-icon mui-action-menu mui-pull-right radio-icon" data-ripple="ripple">
+			<a class="mui-icon mui-action-menu mui-pull-right radio-icon waves">
 				<img src="icons/search.svg">
 			</a>
         </header>
@@ -181,25 +182,25 @@
                                 </a>
                             </a>
                             <a>
-                                <a href="#" class="mui-col-sm-2 mui-col-xs-4 mui-text-center" data-ripple="ripple">
+                                <a href="#" class="mui-col-sm-2 mui-col-xs-4 mui-text-center waves">
                                     <img class="mt-3" src="icons/job.png"/>
                                     <p class="m-2">求职</p>
                                 </a>
                             </a>
                             <a>
-                                <a href="#" class="mui-col-sm-2 mui-col-xs-4 mui-text-center" data-ripple="ripple">
+                                <a href="#" class="mui-col-sm-2 mui-col-xs-4 mui-text-center waves">
                                     <img class="mt-3" src="icons/ic_associations.png"/>
                                     <p class="m-2">社团</p>
                                 </a>
                             </a>
                             <a>
-                                <a href="circle.html" class="mui-col-sm-2 mui-col-xs-4 mui-text-center" data-ripple="ripple">
+                                <a href="circle.html" class="mui-col-sm-2 mui-col-xs-4 mui-text-center waves">
                                     <img class="mt-3" src="icons/ic_cricle.png"/>
                                     <p class="m-2">圈子</p>
                                 </a>
                             </a>
                             <a>
-                                <a href="#" class="mui-col-sm-2 mui-col-xs-4 mui-text-center" data-ripple="ripple">
+                                <a href="#" class="mui-col-sm-2 mui-col-xs-4 mui-text-center waves">
                                     <img class="mt-3" src="icons/ic_curriculum.png"/>
                                     <p class="m-2">未定</p>
                                 </a>
@@ -207,10 +208,7 @@
                         </div>
                     </div>
                 </div>
-                <script type="text/javascript">
-                    // new Ripple()
-                </script>
-                <div class="mui-card " data-ripple="ripple">
+                <div class="mui-card d-block waves">
                     <div class="mui-card-header mui-card-media">
                         <img src="icons/ic_book.svg"/>
                         <div class="mui-media-body " style="line-height: 36px;">
@@ -231,7 +229,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mui-card" data-ripple="ripple">
+                <div class="mui-card d-block waves">
                     <div class="mui-card-header mui-card-media">
                         <img src="icons/ic_weather.svg"/>
                         <div class="mui-media-body " style="line-height: 36px;">
@@ -293,6 +291,10 @@
 		// 	 }
 		//  });
 	 // });
+</script>
+<script type="text/javascript">
+    Waves.init();
+    Waves.attach('.waves');
 </script>
 </body>
 </html>

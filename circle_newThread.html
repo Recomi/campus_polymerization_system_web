@@ -213,7 +213,7 @@
 <body>
     <div style="height: 100%" class=" mui-content bg-content">
         <form id="form" class="position-fixed w-100 h-100" method="post" action="circle_send.php">
-            <textarea style="min-height: 10rem" class="w-100 h-50 mt-2 mb-1 border-0"
+            <textarea id="content" style="min-height: 10rem" class="w-100 h-50 mt-2 mb-1 border-0"
                       placeholder="说点什么吧……"></textarea>
             <div class="w-100 bg-white p-2 m-0 row">
                 <!--<div class="image-box position-relative">-->
@@ -226,7 +226,17 @@
             </div>
         </form>
         <div class="fixed-bottom row b-0 bg-white larger text-info shadow text-center p-0 m-0">
-            <i class="far fa-grin col-2 p-2_5 waves"></i>
+            <div id="emoticon-box" class="w-100 bg-light text-left" style="height: 150px">
+                <span class="emoticon-item text-secondary">´・ω・)ノ</span>
+                <span class="emoticon-item text-secondary">→_→</span>
+                <span class="emoticon-item text-secondary">(ノ°ο°)ノ</span>
+                <span class="emoticon-item text-secondary">φ(￣∇￣o)</span>
+                <span class="emoticon-item text-secondary">Σ(っ °Д °;)っ</span>
+                <span class="emoticon-item text-secondary">(╯°A°)╯︵○○○</span>
+                <span class="emoticon-item text-secondary">( ๑´•ω•) "(ㆆᴗㆆ)</span>
+                <span class="emoticon-item text-secondary">o(*////▽////*)q </span>
+            </div>
+            <i id="emoticon" class="far fa-grin col-2 p-2_5 waves"></i>
             <i onclick="galleryImg()" class="far fa-images col-2 p-2_5 waves"></i>
             <i class="fas fa-map-marker-alt col-2 p-2_5 waves"></i>
             <span class="col-4"></span>
@@ -244,10 +254,24 @@
 </script>
 <script>
     jQuery(document).ready(function ($) {
+        $("#emoticon-box").hide();
         $("#send").on("tap", function (e) {
             $("#form").submit();
         });
+        $("#emoticon").click(function () {
+            $("#emoticon-box").slideToggle()
+        });
+        //遍历表情按钮，添加监听，使表情插入文本框中
+        [].forEach.call(document.querySelectorAll(".emoticon-item"), function (item, index) {
+            item.addEventListener("tap", insertEmoticon(index));
+        });
     });
+    function insertEmoticon(index) {
+        return function(){
+            window.document.getElementById("content").innerHTML = window.document.getElementById("content").innerHTML + this.innerHTML ;
+            // alert(1)
+        }
+    }
     function removeImageListener () {
         $(this.parentElement).remove();
         images = document.querySelectorAll(".image").length;

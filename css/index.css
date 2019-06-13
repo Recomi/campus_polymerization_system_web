@@ -136,7 +136,16 @@ rippleDrop {  100% {
 
 
 
-
+.emoticon-item {
+    padding: 0.3rem;
+    margin: 0.2rem;
+    display: inline-block;
+    border: rgba(184, 184, 184, 0.51) 1px solid;
+    border-radius: 5%;
+}
+.emoticon-item:hover{
+    background: #d1ffea;
+}
 
 
 
