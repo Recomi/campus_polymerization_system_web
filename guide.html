@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>轻云校园</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/waves.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/waves.js"></script>
+    <script type="text/javascript" src="js/vue.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <!--    mui-->
+    <link rel="stylesheet" href="css/mui.min.css">
+    <script src="js/mui.min.js"></script>
+    <script type="text/javascript">
+        mui.init()
+    </script>
+</head>
+<body>
+    <div class="container text-center">
+        <h2>欢迎使用轻云校园</h2>
+        <button onclick="enter()" class="btn-block btn-primary">进入APP</button>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+    function enter() {
+        plus.storage.setItem("lauchFlag", true);
+        mui.openWindow("index.html");
+    }
+</script>

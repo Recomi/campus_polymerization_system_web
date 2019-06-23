@@ -15,6 +15,7 @@
 		<script src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/waves.js"></script>
 		<script type="text/javascript" src="js/vue.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
 		<!--    mui-->
 		<link rel="stylesheet" href="css/mui.min.css">
 		<script src="js/mui.min.js"></script>
@@ -56,10 +57,12 @@
 	</style>
 
 	<body>
-	<div class="mui-scroll-wrapper mui-content" id="refreshContainer">
+	<div class="mui-scroll-wrapper mui-content bg-content" id="refreshContainer">
 		<div id="float-icons" style="z-index: 1001;border-radius: 2rem" class="position-fixed row r-0 b-0 mr-3 mb-2 bg-info ">
 			<i style="font-size: larger " class="fa fa-angle-up waves-circle-left float-icon d-block shadow-none bg-transparent text-light scrollToTop"></i>
-			<i style="font-size: larger " class="fas fa-feather waves-circle-right float-icon d-block bg-transparent shadow-none text-light"></i>
+			<a href="circle_newThread.html">
+				<i style="font-size: larger " class="fas fa-feather waves-circle-right float-icon d-block bg-transparent shadow-none text-light"></i>
+			</a>
 		</div>
 
 		<div id="main" class="mui-scroll">
@@ -90,8 +93,8 @@
 				<img class="d-block m-auto p-2" src="icons/gooey-ring-spinner.svg">
 				<span class="text-info">Loading...</span>
 			</div>
-			<ul class="list-unstyled" id="threads">
-					<li v-for="item in data" class="mui-card mb-1 m-0 shadow-none waves" >
+			<ul class="list-unstyled w-100" id="threads">
+					<li v-for="item in data" class="mui-card mb-1 m-0 w-100 shadow-none waves" >
 						<div class="mui-card-header mui-card-media border-0 p-3">
 							<img src="icons/ic_cricle.png" />
 							<div class="mui-media-body">
@@ -132,7 +135,7 @@
 <script>
 	jQuery(document).ready(function ($) {
 		$.ajax({
-			url: "circle_getThreads.php",
+			url: "https://recomi.site/campus_system/circle_getThreads.php",
 			type: "GET",
 			// async:false,    //异步
 			beforeSend:function() {
@@ -160,7 +163,7 @@
 	Waves.init();
 	Waves.attach('.waves');
 
-	Waves.attach('.flat-icon', ['waves-circle']);
+	Waves.attach('.float-icon', ['waves-circle']);
 	Waves.attach('.float-icon', ['waves-circle', 'waves-float']);
 	Waves.attach('.float-icon-light', ['waves-circle', 'waves-float', 'waves-light']);
 </script>
@@ -208,20 +211,18 @@
 				transform:'translateY(0px)'
 			});
 		});
-		var windowTop = 0;//初始话可视区域距离页面顶端的距离
-		$(window).scroll(function (e) {
-			var scrolled = $(this).scrollTop();
-			if (scrolled >= windowTop) {
-				if (!$('#float-icons').hasClass('fadeOutUp')) {
-					// $('#float-icons').addClass('animated fadeOutUp');
-					// $('#float-icons').removeClass('fadeInDown');
-					// $('#float-icons').css('margin-top','45px');
-				}
-				windowTop = scrolled;
-				// mui.toast("下滑");
-				mui.toast(windowTop);
-			} else if (scrolled < 100) {
-				mui.toast("到顶");
+	});
+</script>
+
+<script>
+	mui('body').on('tap','a',function(){
+		mui.openWindow({
+			url: this.href,
+			// id: 'this.href',
+			show:{
+				autoShow: true,
+				aniShow: 'slide-in-right',
+				duration: '200'
 			}
 		});
 	});

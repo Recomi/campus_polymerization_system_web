@@ -9,12 +9,15 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/ripple.css">
+    <link rel="stylesheet" href="css/waves.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
     <script src="js/jquery-3.4.0.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-	<script type="text/javascript" src="js/ripple.js" charset="UTF-8"></script>
-<!--    mui-->
+    <script type="text/javascript" src="js/waves.js"></script>
+    <script type="text/javascript" src="js/vue.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <!--    mui-->
     <link rel="stylesheet" href="css/mui.min.css">
 	<script src="js/mui.min.js"></script>
     <script type="text/javascript">
@@ -84,8 +87,7 @@
     <aside class="mui-off-canvas-left bg-slide" id="offCanvasSide">
         <div class="mui-scroll-wrapper">
             <div class="mui-scroll">
-				<div style="" class="item item-shadow slide-user" data-ripple="ripple">
-
+				<div style="" class="item item-shadow slide-user w-100 waves">
 					<li class="pb-2">
 						<img id="userIcon" class="radio-icon headicon-mine ml-2_5" src="img/headicon_default.jpg">
 					</li>
@@ -99,15 +101,15 @@
 					</div>
 				</div>
 				<ul class="list-group">
-					<li class="list-group-item list-item-small item border-0" data-ripple="ripple">
+					<li class="list-group-item list-item-small item border-0 waves">
 						<img class="list-icon" src="icons/search.svg" />
 						<span class="list-icon-title">Search</span>
 					</li>
-					<li class="list-group-item list-item-small item border-0" data-ripple="ripple">
+					<li class="list-group-item list-item-small item border-0 waves">
 						<img class="list-icon" src="icons/search.svg" />
 						<span class="list-icon-title">Search</span>
 					</li>
-					<li class="list-group-item list-item-small item border-0" data-ripple="ripple">
+					<li class="list-group-item list-item-small item border-0 waves">
 						<img class="list-icon" src="icons/search.svg" />
 						<span class="list-icon-title">Search</span>
 					</li>
@@ -116,11 +118,11 @@
 				<div class="list-underline"></div>
 
 				<ul class="list-group">
-					<li class="list-group-item list-item-small item border-0" data-ripple="ripple">
+					<li class="list-group-item list-item-small item border-0 waves">
 						<img class="list-icon" src="icons/search.svg" />
 						<span class="list-icon-title">Search</span>
 					</li>
-					<li class="list-group-item list-item-small item border-0" data-ripple="ripple">
+					<li class="list-group-item list-item-small item border-0 waves">
 						<img class="list-icon" src="icons/search.svg" />
 						<span class="list-icon-title">Search</span>
 					</li>
@@ -130,11 +132,11 @@
     </aside>
     <div class="mui-inner-wrap" >
         <header class="mui-bar mui-bar-nav">
-            <a class="mui-icon mui-action-menu mui-pull-left radio-icon" href="#offCanvasSide" data-ripple="ripple">
+            <a class="mui-icon mui-action-menu mui-pull-left radio-icon waves" href="#offCanvasSide">
 				<img src="icons/menuunfold.svg">
 			</a>
             <h1 class="mui-title">轻云校园</h1>
-			<a class="mui-icon mui-action-menu mui-pull-right radio-icon" data-ripple="ripple">
+			<a class="mui-icon mui-action-menu mui-pull-right radio-icon waves">
 				<img src="icons/search.svg">
 			</a>
         </header>
@@ -142,64 +144,64 @@
         <div id="refreshContainer" class="mui-content bg-content">
             <div id="main" class="mui-scroll">
                 <div class="mui-slider">
-                    <div class="mui-slider-group mui-slider-loop">
+                    <div class="mui-slider-group mui-slider-loop openWindow">
                         <!--支持循环，需要重复图片节点-->
                         <div class="mui-slider-item mui-slider-item-duplicate">
-                            <a href="library.html"><img src="images/4.jpg" /></a>
+                            <a class="" href="library.html"><img src="images/4.jpg" /></a>
                         </div>
                         <div class="mui-slider-item">
-                            <a href="library.html"><img src="images/1.jpg" /></a>
+                            <a class="" href="library.html"><img src="images/1.jpg" /></a>
                         </div>
                         <div class="mui-slider-item">
-                            <a href="library.html"><img src="images/2.jpg" /></a>
+                            <a class="" href="library.html"><img src="images/2.jpg" /></a>
                         </div>
                         <div class="mui-slider-item">
-                            <a href="library.html"><img src="images/3.jpg" /></a>
+                            <a class="" href="library.html"><img src="images/3.jpg" /></a>
                         </div>
                         <div class="mui-slider-item">
-                            <a href="library.html"><img src="images/4.jpg" /></a>
+                            <a class="" href="library.html"><img src="images/4.jpg" /></a>
                         </div>
                         <!--支持循环，需要重复图片节点-->
                         <div class="mui-slider-item mui-slider-item-duplicate">
-                            <a href="#"><img src="images/1.jpg" /></a>
+                            <a class="" href="#"><img src="images/1.jpg" /></a>
                         </div>
                     </div>
                 </div>
                 <div class="mui-content">
                     <div class="mui-card">
-                        <div class="mui-row">
+                        <div class="mui-row openWindow">
                             <a>
-                                <a href="library.html" class="mui-col-sm-2 mui-col-xs-4 mui-text-center" data-ripple="ripple">
+                                <a href="library.html" class=" mui-col-sm-2 mui-col-xs-4 mui-text-center" data-ripple="ripple">
                                     <img class="mt-3" src="icons/ic_library.png"/>
                                     <p class="m-2">图书馆</p>
                                 </a>
                             </a>
                             <a>
-                                <a href="#" class="mui-col-sm-2 mui-col-xs-4 mui-text-center" data-ripple="ripple">
+                                <a href="#" class=" mui-col-sm-2 mui-col-xs-4 mui-text-center" data-ripple="ripple">
                                     <img class="mt-3" src="icons/ic_curriculum.png"/>
                                     <p class="m-2">课程表</p>
                                 </a>
                             </a>
                             <a>
-                                <a href="#" class="mui-col-sm-2 mui-col-xs-4 mui-text-center" data-ripple="ripple">
+                                <a href="#" class="mui-col-sm-2 mui-col-xs-4 mui-text-center waves">
                                     <img class="mt-3" src="icons/job.png"/>
                                     <p class="m-2">求职</p>
                                 </a>
                             </a>
                             <a>
-                                <a href="#" class="mui-col-sm-2 mui-col-xs-4 mui-text-center" data-ripple="ripple">
+                                <a href="#" class="mui-col-sm-2 mui-col-xs-4 mui-text-center waves">
                                     <img class="mt-3" src="icons/ic_associations.png"/>
                                     <p class="m-2">社团</p>
                                 </a>
                             </a>
                             <a>
-                                <a href="circle.html" class="mui-col-sm-2 mui-col-xs-4 mui-text-center" data-ripple="ripple">
+                                <a href="circle.html" class="mui-col-sm-2 mui-col-xs-4 mui-text-center waves">
                                     <img class="mt-3" src="icons/ic_cricle.png"/>
                                     <p class="m-2">圈子</p>
                                 </a>
                             </a>
                             <a>
-                                <a href="#" class="mui-col-sm-2 mui-col-xs-4 mui-text-center" data-ripple="ripple">
+                                <a href="#" class="mui-col-sm-2 mui-col-xs-4 mui-text-center waves">
                                     <img class="mt-3" src="icons/ic_curriculum.png"/>
                                     <p class="m-2">未定</p>
                                 </a>
@@ -207,10 +209,7 @@
                         </div>
                     </div>
                 </div>
-                <script type="text/javascript">
-                    // new Ripple()
-                </script>
-                <div class="mui-card " data-ripple="ripple">
+                <div class="mui-card d-block waves">
                     <div class="mui-card-header mui-card-media">
                         <img src="icons/ic_book.svg"/>
                         <div class="mui-media-body " style="line-height: 36px;">
@@ -231,7 +230,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mui-card" data-ripple="ripple">
+                <div class="mui-card d-block waves">
                     <div class="mui-card-header mui-card-media">
                         <img src="icons/ic_weather.svg"/>
                         <div class="mui-media-body " style="line-height: 36px;">
@@ -293,6 +292,10 @@
 		// 	 }
 		//  });
 	 // });
+</script>
+<script type="text/javascript">
+    Waves.init();
+    Waves.attach('.waves');
 </script>
 </body>
 </html>
@@ -377,7 +380,7 @@ mui.plusReady(function() {
 		//显示启动导航
 		mui.openWindow({
 			id: 'guide',
-			url: 'examples/guide.html',
+			url: 'guide.html',
 			styles: {
 				popGesture: "none"
 			},
@@ -486,114 +489,6 @@ mui.plusReady(function() {
 	}
 	
 });
-//主列表点击事件
-mui('#list').on('tap', 'a', function() {
-	var href = this.getAttribute('href');
-	
-	//非plus环境，直接走href跳转
-	if(!mui.os.plus) {
-		location.href = href;
-		return;
-	}
-	
-	var id = this.getAttribute("data-wid");
-	if(!id) {
-		id = href;
-	}
-
-	if(href && ~href.indexOf('.html')) {
-		//打开窗口的相关参数
-		var options = {
-			styles:{
-				popGesture: "close"
-			},
-			extras:{}
-		};
-		//如下场景不适用下拉回弹：
-		//1、单webview下拉刷新；2、底部有fixed定位的div的页面
-		if(!~id.indexOf('pullrefresh.html') && !~href.indexOf("examples/tabbar.html") && !~href.indexOf("list-to-detail/listview.html")) {
-			options.styles.bounce = "vertical";
-		}
-		//图标页面需要启动硬件加速
-		if(~id.indexOf('icons.html') || ~id.indexOf("echarts.html")) {
-			options.styles.hardwareAccelerated = true;
-		}
-		if(~id.indexOf('im-chat.html')) {
-			options.extras.acceleration = "none";
-		}
-		
-		var titleType = this.getAttribute("data-title-type");
-		if(titleType && titleType.indexOf("native") > -1) {//原生导航
-			options.styles.titleNView = {
-				autoBackButton:true,
-				backgroundColor:'#f7f7f7',
-				titleText:this.innerHTML.trim(),
-				splitLine: {
-					color: '#cccccc'
-				}
-			};
-			
-			options.show = {
-				event:'loaded'
-			}
-			//有原生标题的情况下，就不需要waiting框了
-			options.waiting = {
-				autoShow:false
-			}
-			
-			//透明渐变导航,增加类型设置
-			if(titleType == "transparent_native") {
-				options.styles.titleNView.type = "transparent";
-			}
-			
-			//处理原生图片轮播
-			if(~id.indexOf("slider-native.html")) {
-				options.styles.subNViews = [{ //配置图片轮播
-					id: 'slider-native',
-					type: 'ImageSlider',
-					styles: {
-						left: 0,
-						right: 0,
-						top: 0,
-						height: '200px',
-						position: 'static',
-						loop: true,
-						images: [{
-							src: '_www/images/yuantiao.jpg',
-							width: '100%'
-						}, {
-							src: '_www/images/shuijiao.jpg',
-							width: '100%',
-						}, {
-							src: '_www/images/muwu.jpg',
-							width: '100%',
-						}, {
-							src: '_www/images/cbd.jpg',
-							width: '100%',
-						}]
-					}
-				}];
-			}
-		}else{
-			//非原生导航，需要设置顶部状态栏占位
-			options.styles.statusbar = {
-				background: "#f7f7f7"
-			}
-		}
-		
-		//侧滑菜单需动态控制一下zindex值；
-		if(~id.indexOf('offcanvas-')) {
-			options.styles.zindex = 9998;
-			options.styles.popGesture = ~id.indexOf('offcanvas-with-right') ? "close" : "none";
-		}
-		
-		if(id && id == "viewgroup") { //强制启用截屏
-			options.extras.acceleration = "capture";
-		}
-		//打开新窗口
-		mui.openWindow(href,id,options);
-	}
-});
 /**
  * 显示侧滑菜单
  */
@@ -663,45 +558,18 @@ mui.back = function() {
 	} else {
 		plus.runtime.quit();
 	}
-}
-
-//重写mui.menu方法，Android版本menu按键按下可自动打开、关闭侧滑菜单；
-mui.menu = function() {
-	if(parseInt(_self.getStyle().left) > 0) {
-		closeMenu();
-	} else {
-		openMenu();
-	}
-}
-
-/**
- * 退出时提醒用户参加问题反馈
- */
-function openFeedback() {
-	plus.nativeUI.showWaiting();
-	var _p = plus.os.name === 'Android' ? 'a' : plus.os.name === 'iOS' ? 'i' : '';
-	//TODO：这里使用的是FeedBack云地址，开发者也可以替换为本地页面地址
-	var url = 'http://stream.dcloud.net.cn/wap2app/feedback?p=' + _p;
-	url += "&plus_version=" + plus.runtime.innerVersion;
-	url += "&vendor=" + plus.device.vendor;
-	url += "&md=" + plus.device.model;
-	/*****开发者需修改的部分   开始*****/
-	url += "&app_name=HelloMUI&app_vendor=DCloud";
-	//如有本地关于页面，则填写关于页面的路径
-	//注意：需要_www/前缀
-	url += "&about=_www/examples/info.html";
-	/*****开发者需修改的部分   结束*****/
-
-	var feedbackWebview = plus.webview.create(url, "__W2A_FEEDBACK");
-	feedbackWebview.addEventListener('titleUpdate', function() {
-		plus.nativeUI.closeWaiting();
-		feedbackWebview.show('slide-in-right', 300);
-	});
-}
+};
 </script>
-</body>
-<script type="text/javascript">
-	mui('body').on('tap','a',function(){
-    document.location.href=this.href;
-});
+<script>
+    mui('.openWindow').on('tap','a',function(){
+        mui.openWindow({
+            url: this.href,
+            // id: 'this.href',
+            show:{
+                autoShow: true,
+                aniShow: 'slide-in-right',
+                duration: '200'
+            }
+        });
+    });
 </script>
