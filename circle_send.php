@@ -6,6 +6,9 @@
  * Time: 9:57
  */
 include_once 'config.php';
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: GET, POST");
+header("Access-Control-Allow-Headers: Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With");
 header('Content-Type:application/json; charset=utf-8');
 // 设置时区
 date_default_timezone_set("PRC");
