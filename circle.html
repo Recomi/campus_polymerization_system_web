@@ -20,7 +20,7 @@
 		<link rel="stylesheet" href="css/mui.min.css">
 		<script src="js/mui.min.js"></script>
 		<script type="text/javascript">
-			mui.init()
+			// mui.init()
 		</script>
 		<style type="text/css">
 			#list {
@@ -57,14 +57,12 @@
 	</style>
 
 	<body>
-	<div class="mui-scroll-wrapper mui-content bg-content" id="refreshContainer">
-		<div id="float-icons" style="z-index: 1001;border-radius: 2rem" class="position-fixed row r-0 b-0 mr-3 mb-2 bg-info ">
-			<i style="font-size: larger " class="fa fa-angle-up waves-circle-left float-icon d-block shadow-none bg-transparent text-light scrollToTop"></i>
-			<a href="circle_newThread.html">
-				<i style="font-size: larger " class="fas fa-feather waves-circle-right float-icon d-block bg-transparent shadow-none text-light"></i>
-			</a>
-		</div>
 
+    <header id="header" class="mui-bar mui-bar-nav">
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <h1 class="mui-title">导航栏</h1>
+    </header>
+	<div class="mui-scroll-wrapper mui-content bg-content" id="refreshContainer">
 		<div id="main" class="mui-scroll">
 			<div class="mui-card mb-2 waves d-block" style="margin: 0;" >
 				<div class="mui-card-header mui-card-media ">
@@ -96,23 +94,23 @@
 			<ul class="list-unstyled w-100" id="threads">
 					<li v-for="item in data" class="mui-card mb-1 m-0 w-100 shadow-none waves" >
 						<div class="mui-card-header mui-card-media border-0 p-3">
-							<img src="icons/ic_cricle.png" />
+							<img width="35" height="35" src="icons/ic_cricle.png" />
 							<div class="mui-media-body">
-								user_id:{{item.user_id}}
-								<p>社区版主</p>
+                                <div class="text-dark medium pb-1">user_id:{{item.user_id}}</div>
+								<p class="small">社区版主</p>
 							</div>
 						</div>
 						<p class="text-dark pl-3 pr-3 text-break">{{item.content}}</p>
 						<div class="row img-thumbnail border-0 m-0 p-2" id="exchange_img">
-							<div class="col-4 text-center p-1 waves">
-								<img src="images/2.jpg" />
-							</div>
-							<div class="col-4 text-center p-1 waves">
-								<img src="images/2.jpg" />
-							</div>
-							<div class="col-4 text-center p-1 waves">
-								<img src="images/2.jpg" />
-							</div>
+							<!--<div class="col-4 text-center p-1 waves">-->
+								<!--<img src="images/2.jpg" />-->
+							<!--</div>-->
+							<!--<div class="col-4 text-center p-1 waves">-->
+								<!--<img src="images/2.jpg" />-->
+							<!--</div>-->
+							<!--<div class="col-4 text-center p-1 waves">-->
+								<!--<img src="images/2.jpg" />-->
+							<!--</div>-->
 						</div>
 						<div class="flex-row p-1 pl-3 pr-3 align-items-center text-black-50">
 							<!--<span class="pText pl-1 pr-1">推荐</span>-->
@@ -129,35 +127,80 @@
 					</li>
 				</ul>
 		</div>
-	</div>
+        <div id="float-icons" style="z-index: 1001;border-radius: 2rem" class="position-fixed row r-0 b-0 mr-3 mb-2 bg-info ">
+            <i style="font-size: larger " class="fa fa-angle-up waves-circle-left float-icon d-block shadow-none bg-transparent text-light scrollToTop"></i>
+            <a href="circle_newThread.html">
+                <i style="font-size: larger " class="fas fa-feather waves-circle-right float-icon d-block bg-transparent shadow-none text-light"></i>
+            </a>
+        </div>
+    </div>
 	</body>
 </html>
 <script>
+    //设置数据
+    var threads = new Vue({
+        el: '#threads',
+        data: {
+            data:{}
+        }
+    });
+    //首次加载
 	jQuery(document).ready(function ($) {
-		$.ajax({
-			url: "https://recomi.site/campus_system/circle_getThreads.php",
-			type: "GET",
-			// async:false,    //异步
-			beforeSend:function() {
-				$("#threads").hide();
-			},
-			success: function (data) {
-				var jsonArr = jQuery.parseJSON(data);
-				//设置数据
-				new Vue({
-					el:'#threads',
-					data:jsonArr,
-				});
-				$("#threads").show();
-				$(".loading").hide();
-			},
-			error:function (msg) {
-				mui.alert("获取信息失败，请检查网络");
-			},
-			complete:function () {
-			}
-		});
+        refreshData();
+        mui("#threads").on("tap","li",function(){
+            mui.openWindow({
+                url: "circle_viewThread.html",
+                // id: 'this.href',
+                show:{
+                    autoShow: true,
+                    aniShow: 'slide-in-right',
+                    duration: '200'
+                }
+            });
+        });
 	});
+	function refreshData() {
+        $.ajax({
+            url: "https://recomi.site/campus_system/circle_getThreads.php",
+            type: "GET",
+            async:false,    //异步
+            beforeSend:function() {
+                $("#threads").hide();
+            },
+            success: function (data) {
+                var jsonArr = jQuery.parseJSON(data);
+                threads.$data.data = jsonArr.data; //更新数据
+                $("#threads").show();
+                $(".loading").hide();
+            },
+            error:function (msg) {
+                mui.alert("获取信息失败，请检查网络");
+            },
+            complete:function () {
+                mui('#refreshContainer').pullRefresh().endPulldown();
+            }
+        });
+    }
+	function loadMoreData(_this) {
+        $.ajax({
+            url: "https://recomi.site/campus_system/circle_getThreads.php",
+            type: "GET",
+            async:false,    //异步
+            beforeSend:function() {
+                //
+            },
+            success: function (data) {
+                //
+            },
+            error:function (msg) {
+                mui.alert("获取信息失败，请检查网络");
+            },
+            complete:function () {
+                //显示文字：上拉显示更多
+                _this.endPullupToRefresh(false);
+            }
+        });
+    }
 </script>
 <script type="text/javascript">
 	Waves.init();
@@ -168,10 +211,10 @@
 	Waves.attach('.float-icon-light', ['waves-circle', 'waves-float', 'waves-light']);
 </script>
 <script>
-	mui('.mui-scroll-wrapper').scroll({
-		scrollY: true, //是否竖向滚动
-		deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
-	});
+	// mui('.mui-scroll-wrapper').scroll({
+	// 	scrollY: true, //是否竖向滚动
+	// 	deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+	// });
 	mui.init({
 		pullRefresh : {
 			container:"#refreshContainer",//下拉刷新容器标识，querySelector能定位的css选择器均可，比如：id、.class等
@@ -181,11 +224,20 @@
 				height:'50px',//可选,默认50px.下拉刷新控件的高度,
 				range:'100px', //可选 默认100px,控件可下拉拖拽的范围
 				offset:'0px', //可选 默认0px,下拉刷新控件的起始位置
-				auto: true,//可选,默认false.首次加载自动上拉刷新一次
+				auto: false,//可选,默认false.首次加载自动上拉刷新一次
 				callback :function () {
-
+                    refreshData();
 				} //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
-			}
+			},
+            up: {
+                height:50,//可选.默认50.触发上拉加载拖动距离
+                auto:false,//可选,默认false.自动上拉加载一次
+                contentrefresh : "正在加载...",//可选，正在加载状态时，上拉加载控件上显示的标题内容
+                contentnomore:'没有更多数据了',//可选，请求完毕若没有更多数据时显示的提醒内容；
+                callback :function () {
+                    loadMoreData(this);
+                }
+            }
 		}
 	});
 	$(".scrollToTop").on("tap", function (e) {

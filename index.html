@@ -86,8 +86,8 @@
 <div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
     <aside class="mui-off-canvas-left bg-slide" id="offCanvasSide">
         <div class="mui-scroll-wrapper">
-            <div class="mui-scroll">
-				<div style="" class="item item-shadow slide-user w-100 waves">
+            <div class="mui-scroll ">
+				<div id="user" class="item item-shadow slide-user w-100 waves">
 					<li class="pb-2">
 						<img id="userIcon" class="radio-icon headicon-mine ml-2_5" src="img/headicon_default.jpg">
 					</li>
@@ -100,7 +100,7 @@
 						</li>
 					</div>
 				</div>
-				<ul class="list-group">
+				<ul id="list" class="list-group">
 					<li class="list-group-item list-item-small item border-0 waves">
 						<img class="list-icon" src="icons/search.svg" />
 						<span class="list-icon-title">Search</span>
@@ -113,20 +113,20 @@
 						<img class="list-icon" src="icons/search.svg" />
 						<span class="list-icon-title">Search</span>
 					</li>
+                    <div class="list-group-item list-item-small item border-0">
+                        <div class="list-underline"></div>
+                    </div>
+                    <li class="list-group-item list-item-small item border-0 waves">
+                        <img class="list-icon" src="icons/search.svg" />
+                        <span class="list-icon-title">Search</span>
+                    </li>
+                    <li class="list-group-item list-item-small item border-0 waves">
+                        <img class="list-icon" src="icons/search.svg" />
+                        <span class="list-icon-title">Search</span>
+                    </li>
 				</ul>
 
-				<div class="list-underline"></div>
 
-				<ul class="list-group">
-					<li class="list-group-item list-item-small item border-0 waves">
-						<img class="list-icon" src="icons/search.svg" />
-						<span class="list-icon-title">Search</span>
-					</li>
-					<li class="list-group-item list-item-small item border-0 waves">
-						<img class="list-icon" src="icons/search.svg" />
-						<span class="list-icon-title">Search</span>
-					</li>
-				</ul>
             </div>
         </div>
     </aside>
@@ -305,6 +305,28 @@
 	gallery.slider({
 		interval: 5000 //自动轮播周期，若为0则不自动播放，默认为0；
 	});
+	mui("body").on("tap", "#user", function () {
+        mui.openWindow({
+            url: "login.html",
+            // id: 'this.href',
+            show:{
+                autoShow: true,
+                aniShow: 'slide-in-right',
+                duration: '200'
+            }
+        });
+    });
+	mui("#list").on("tap", "li", function () {
+        mui.openWindow({
+            // url: this.href,
+            // id: 'this.href',
+            show:{
+                autoShow: true,
+                aniShow: 'slide-in-right',
+                duration: '200'
+            }
+        });
+    })
 </script>
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript">

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轻云校园</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/waves.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/waves.js"></script>
+    <script type="text/javascript" src="js/vue.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <!--    mui-->
+    <link rel="stylesheet" href="css/mui.min.css">
+    <script src="js/mui.min.js"></script>
+    <script type="text/javascript">
+        mui.init()
+    </script>
+    <style type="text/css">
+        .headicon {
+            width:35px;
+            max-width:35px;
+            height:35px;
+            max-height:35px;
+        }
+    </style>
+</head>
+<body>
+
+<header id="header" class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title">导航栏</h1>
+</header>
+<div class="mui-content">
+    <div class="mui-card mb-1 m-0 w-100 shadow-none waves" >
+        <div class="mui-card-header mui-card-media border-0 p-3">
+            <img src="icons/ic_cricle.png" />
+            <div class="mui-media-body">
+                <div class="text-dark large mb-2">user_id:{{item.user_id}}</div>
+                <p>社区版主</p>
+            </div>
+        </div>
+        <p class="text-dark pl-3 pr-3 text-break">{{item.content}}</p>
+        <div class="row img-thumbnail border-0 m-0 p-2" id="exchange_img">
+            <!--<div class="col-4 text-center p-1 waves">-->
+            <!--<img src="images/2.jpg" />-->
+            <!--</div>-->
+            <!--<div class="col-4 text-center p-1 waves">-->
+            <!--<img src="images/2.jpg" />-->
+            <!--</div>-->
+            <!--<div class="col-4 text-center p-1 waves">-->
+            <!--<img src="images/2.jpg" />-->
+            <!--</div>-->
+        </div>
+        <div class="flex-row p-1 pl-3 pr-3 align-items-center text-black-50">
+            <!--<span class="pText pl-1 pr-1">推荐</span>-->
+            <span>{{item.time}}</span>
+            <span class="float-right ml-2 mr-2">
+						<img src="icons/ic_page_view.svg"/>
+						<span>288</span>
+					</span>
+            <span class="float-right ml-2">
+						<img src="icons/ic_leave_word.svg"/>
+						<span id="#">2889</span>
+					</span>
+        </div>
+    </div>
+
+    <div class="fixed-bottom bg-white border shadow p-0 row ">
+        <div class="col-4 d-flex justify-content-start">
+            <i class="far fa-thumbs-up   text-info waves p-3 m-0 h-100"></i>
+            <i class="far fa-comment-alt text-info waves p-3 m-0 h-100"></i>
+        </div>
+        <div class="col-8 row pt-1 pb-1 justify-content-end">
+            <input class="form-control col-8 " placeholder="写评论..">
+            <button id="send" class="col-3 waves text-info btn-light ml-2">发送</button>
+        </div>
+    </div>
+
+    <ul class="list-unstyled">
+        <li class="w-100 bg-white pl-2 pr-2 d-flex pt-2 pb-2">
+            <div class="mui-card-header mui-card-media border-0 ">
+                <img width="35" height="35" src="icons/ic_cricle.png" />
+                <div class="mui-media-body">
+                    <div class="text-info medium pb-1">user_id:{{item.user_id}}</div>
+                    <p style="font-weight: 400" class="medium text-dark">
+                        但是分开了是第几ssasssdsdsdasasasas个平凡 i 时间   速度快女老师呢但是懒得说你vs 大脑开发但是反倒是快乐的时光十多个是的风格的风格都发生过防晒霜
+                    </p>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+    Waves.init();
+    Waves.attach('.waves');
+
+    Waves.attach('.float-icon', ['waves-circle']);
+    Waves.attach('.float-icon', ['waves-circle', 'waves-float']);
+    Waves.attach('.float-icon-light', ['waves-circle', 'waves-float', 'waves-light']);
+</script>

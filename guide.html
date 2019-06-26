@@ -24,15 +24,28 @@
     </script>
 </head>
 <body>
-    <div class="container text-center">
-        <h2>欢迎使用轻云校园</h2>
-        <button onclick="enter()" class="btn-block btn-primary">进入APP</button>
+    <div class="container text-center p-5">
+        <div style="padding-top: 10rem;" class="w-100">
+            <h2 style="padding-bottom: 10rem;" class="pt-5">欢迎使用轻云校园</h2>
+            <button onclick="enter()" class="btn-block btn-primary btn-lg mt-5 mb-5">进入APP</button>
+        </div>
     </div>
 </body>
 </html>
 <script type="text/javascript">
     function enter() {
-        plus.storage.setItem("lauchFlag", true);
-        mui.openWindow("index.html");
+
+        mui.plusReady(function() {
+            plus.storage.setItem("lauchFlag", "true");
+            mui.openWindow({
+                url: "index.html",
+                // id: 'this.href',
+                show:{
+                    autoShow: true,
+                    aniShow: 'slide-in-right',
+                    duration: '200'
+                }
+            });
+        });
     }
 </script>
