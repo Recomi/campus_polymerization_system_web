@@ -66,17 +66,15 @@
                             headers:{'Content-Type':'text/html'},
                             success:function(data){
                                 //服务器返回响应，根据响应结果，分析是否登录成功；
-                                mui.alert("success","success");
+                                mui.toast("刷新成功！");
                             },
                             error:function(xhr,type,errorThrown){
                                 //异常处理；
-                                mui.alert("boom","boom");
+                                mui.toast("加载异常");
                             }
                         });
-                        mui.toast("刷新成功！");
-                        // mui.ajax("");
                         mui('#refreshContainer').pullRefresh().endPulldown();
-                    } //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+                    }
                 }
             }
         });
@@ -93,36 +91,36 @@
 					</li>
 					<div class="slide-user-shadow pt-2">
 						<li class="">
-							<a id="userName" class="slide-user-name text-white ml-2_5">Recomi</a>
+							<a id="userName" class="slide-user-name text-white ml-2_5">点击登陆</a>
 						</li>
 						<li class="pb-2">
-							<a id="userId" class="slide-user-id text-white ml-2_5">ID:17304590134</a>
+							<a id="userId" class="slide-user-id text-white ml-2_5">ID:0</a>
 						</li>
 					</div>
 				</div>
 				<ul id="list" class="list-group">
 					<li class="list-group-item list-item-small item border-0 waves">
 						<img class="list-icon" src="icons/search.svg" />
-						<span class="list-icon-title">Search</span>
+						<span class="list-icon-title">首页</span>
 					</li>
 					<li class="list-group-item list-item-small item border-0 waves">
 						<img class="list-icon" src="icons/search.svg" />
-						<span class="list-icon-title">Search</span>
+						<span class="list-icon-title">个人信息</span>
 					</li>
 					<li class="list-group-item list-item-small item border-0 waves">
 						<img class="list-icon" src="icons/search.svg" />
-						<span class="list-icon-title">Search</span>
+						<span class="list-icon-title">我的班级</span>
 					</li>
                     <div class="list-group-item list-item-small item border-0">
                         <div class="list-underline"></div>
                     </div>
                     <li class="list-group-item list-item-small item border-0 waves">
                         <img class="list-icon" src="icons/search.svg" />
-                        <span class="list-icon-title">Search</span>
+                        <span class="list-icon-title">我的收藏</span>
                     </li>
                     <li class="list-group-item list-item-small item border-0 waves">
                         <img class="list-icon" src="icons/search.svg" />
-                        <span class="list-icon-title">Search</span>
+                        <span class="list-icon-title">设置</span>
                     </li>
 				</ul>
 
@@ -171,41 +169,41 @@
                     <div class="mui-card">
                         <div class="mui-row openWindow">
                             <a>
-                                <a href="library.html" class=" mui-col-sm-2 mui-col-xs-4 mui-text-center" data-ripple="ripple">
+                                <a href="library.html" class=" mui-col-sm-3 mui-col-xs-3 mui-text-center" data-ripple="ripple">
                                     <img class="mt-3" src="icons/ic_library.png"/>
                                     <p class="m-2">图书馆</p>
                                 </a>
                             </a>
                             <a>
-                                <a href="#" class=" mui-col-sm-2 mui-col-xs-4 mui-text-center" data-ripple="ripple">
+                                <a href="class.html" class=" mui-col-sm-3 mui-col-xs-3 mui-text-center" data-ripple="ripple">
                                     <img class="mt-3" src="icons/ic_curriculum.png"/>
                                     <p class="m-2">课程表</p>
                                 </a>
                             </a>
                             <a>
-                                <a href="#" class="mui-col-sm-2 mui-col-xs-4 mui-text-center waves">
+                                <a href="qiuzhi.html" class="mui-col-sm-3 mui-col-xs-3 mui-text-center waves">
                                     <img class="mt-3" src="icons/job.png"/>
                                     <p class="m-2">求职</p>
                                 </a>
                             </a>
+                            <!--<a>-->
+                                <!--<a href="#" class="mui-col-sm-2 mui-col-xs-4 mui-text-center waves">-->
+                                    <!--<img class="mt-3" src="icons/ic_associations.png"/>-->
+                                    <!--<p class="m-2">社团</p>-->
+                                <!--</a>-->
+                            <!--</a>-->
                             <a>
-                                <a href="#" class="mui-col-sm-2 mui-col-xs-4 mui-text-center waves">
-                                    <img class="mt-3" src="icons/ic_associations.png"/>
-                                    <p class="m-2">社团</p>
-                                </a>
-                            </a>
-                            <a>
-                                <a href="circle.html" class="mui-col-sm-2 mui-col-xs-4 mui-text-center waves">
+                                <a href="circle.html" class="mui-col-sm-3 mui-col-xs-3 mui-text-center waves">
                                     <img class="mt-3" src="icons/ic_cricle.png"/>
                                     <p class="m-2">圈子</p>
                                 </a>
                             </a>
-                            <a>
-                                <a href="#" class="mui-col-sm-2 mui-col-xs-4 mui-text-center waves">
-                                    <img class="mt-3" src="icons/ic_curriculum.png"/>
-                                    <p class="m-2">未定</p>
-                                </a>
-                            </a>
+                            <!--<a>-->
+                                <!--<a href="#" class="mui-col-sm-2 mui-col-xs-4 mui-text-center waves">-->
+                                    <!--<img class="mt-3" src="icons/ic_curriculum.png"/>-->
+                                    <!--<p class="m-2">未定</p>-->
+                                <!--</a>-->
+                            <!--</a>-->
                         </div>
                     </div>
                 </div>
@@ -306,15 +304,30 @@
 		interval: 5000 //自动轮播周期，若为0则不自动播放，默认为0；
 	});
 	mui("body").on("tap", "#user", function () {
-        mui.openWindow({
-            url: "login.html",
-            // id: 'this.href',
-            show:{
-                autoShow: true,
-                aniShow: 'slide-in-right',
-                duration: '200'
-            }
-        });
+        var userId = window.localStorage.getItem("userId");
+        if(userId == undefined) {
+            mui.openWindow({
+                url: "login.html",
+                // id: 'this.href',
+                show:{
+                    autoShow: true,
+                    aniShow: 'slide-in-right',
+                    duration: '200'
+                }
+            });
+        } else {
+            var btnArray = ['否', '是'];
+            mui.confirm('是否退出登录？', '提示', btnArray, function(e) {
+                if (e.index == 1) {
+                    window.localStorage.removeItem("userId");
+                    window.localStorage.removeItem("userName");
+                    mui.toast("退出登录成功");
+                    setTimeout("window.location.reload()",1000);
+                } else {
+                    //
+                }
+            })
+        }
     });
 	mui("#list").on("tap", "li", function () {
         mui.openWindow({
@@ -594,4 +607,13 @@ mui.back = function() {
             }
         });
     });
+    jQuery(document).ready(function ($) {
+        //设置显示已登陆的用户名
+        var userId = window.localStorage.getItem("userId");
+        var userName = window.localStorage.getItem("userName");
+        if(userName != undefined) {
+            $("#userId").html(userId);
+            $("#userName").html(userName);
+        }
+    })
 </script>

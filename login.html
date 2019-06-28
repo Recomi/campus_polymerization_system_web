@@ -179,9 +179,10 @@
                 success: function (result) {
                     if (result == "true") {
                         $('#loading').modal('hide');
-                        mui.alert("登陆成功","",['嗯'],function (e) {
-                            e.index
-                        },'div');
+                        window.localStorage.setItem("userId", id);
+                        window.localStorage.setItem("userName", "Recomi");
+                        mui.toast("登陆成功,正在跳转首页");
+                        setTimeout("window.location.href='index.html'",1000);
                     } else {
                         $('#loading').modal('hide');
                         mui.alert("","登录失败，请检查id是否存在或密码是否正确",function (e) {

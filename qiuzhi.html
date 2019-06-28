@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轻云校园</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/waves.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/waves.js"></script>
+    <script type="text/javascript" src="js/vue.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <!--    mui-->
+    <link rel="stylesheet" href="css/mui.min.css">
+    <script src="js/mui.min.js"></script>
+    <script type="text/javascript">
+        mui.init()
+    </script>
+</head>
+<body>
+<header id="header" class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title">求职</h1>
+</header>
+<div class="mui-content">
+    <ul id="threads" class="list-unstyled">
+        <li v-for="item in data" class="card">
+            <div class="pl-3 pr-3 pt-3">
+                <span class="float-left text-dark font-weight-bold">{{item.jobName}}</span>
+                <span class="float-right text-danger">{{item.salary}}</span>
+            </div>
+            <div class="pl-3 pr-3 pt-2 text-secondary">
+                <span class="float-left">{{item.company}}</span>
+                <span class="float-right">{{item.date}}</span>
+            </div>
+            <div class="pl-3 pr-3 pt-2 mb-3 text-secondary">
+                <span class="badge badge-info">{{item.location}}</span>
+                <span class="badge badge-info">{{item.sum}}</span>
+            </div>
+        </li>
+    </ul>
+</div>
+<script>
+    jQuery(document).ready(function ($) {
+
+        //设置数据
+        var threads = new Vue({
+            el: '#threads',
+            data: {
+                data:{}
+            }
+        });
+        $.ajax({
+            url: "https://recomi.site/campus_system/qiuzhi.php",
+            type: "POST",
+            data: {
+                type: "recruitmentInformation",
+                jobLocation: "all",
+                jobCategory: "all"
+            },
+            async:false,    //异步
+            beforeSend:function() {
+                // $("#threads").hide();
+            },
+            success: function (data) {
+                threads.$data.data = data; //更新数据
+                mui.toast("加载成功～");
+            },
+            error:function (msg) {
+                mui.alert("获取信息失败，请检查网络");
+            },
+            complete:function () {
+                //
+            }
+        });
+    });
+</script>
+</body>
+</html>

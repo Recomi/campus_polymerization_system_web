@@ -35,25 +35,23 @@
 
 <header id="header" class="mui-bar mui-bar-nav">
     <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
-    <h1 class="mui-title">导航栏</h1>
+    <h1 class="mui-title">正文</h1>
 </header>
 <div class="mui-content">
     <div class="mui-card mb-1 m-0 w-100 shadow-none waves" >
-        <div class="mui-card-header mui-card-media border-0 p-3">
-            <img src="icons/ic_cricle.png" />
-            <div class="mui-media-body">
-                <div class="text-dark large mb-2">user_id:{{item.user_id}}</div>
-                <p>社区版主</p>
+        <div class="list-unstyled" id="threads">
+            <div v-for="item in data">
+                <div class="mui-card-header mui-card-media border-0 p-3">
+                    <img src="icons/ic_cricle.png" />
+                    <div class="mui-media-body">
+                        <div class="text-dark large mb-2">{{item.user_id}}</div>
+                        <p>学生</p>
+                    </div>
+                </div>
+                <p class="text-dark pl-3 pr-3 text-break">{{item.content}}</p>
             </div>
         </div>
-        <p class="text-dark pl-3 pr-3 text-break">{{item.content}}</p>
         <div class="row img-thumbnail border-0 m-0 p-2" id="exchange_img">
-            <!--<div class="col-4 text-center p-1 waves">-->
-            <!--<img src="images/2.jpg" />-->
-            <!--</div>-->
-            <!--<div class="col-4 text-center p-1 waves">-->
-            <!--<img src="images/2.jpg" />-->
-            <!--</div>-->
             <!--<div class="col-4 text-center p-1 waves">-->
             <!--<img src="images/2.jpg" />-->
             <!--</div>-->
@@ -97,8 +95,6 @@
         </li>
     </ul>
 </div>
-</body>
-</html>
 <script type="text/javascript">
     Waves.init();
     Waves.attach('.waves');
@@ -107,3 +103,52 @@
     Waves.attach('.float-icon', ['waves-circle', 'waves-float']);
     Waves.attach('.float-icon-light', ['waves-circle', 'waves-float', 'waves-light']);
 </script>
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        //设置数据
+        var threads = new Vue({
+            el: '#threads',
+            data: {
+                data:[
+                        {"thread_id":13,"content":"怎么没人，出来聊天(╯°A°)╯︵○○○\n掀翻这里´・ω・)ノ´・ω・)ノ","user_id":"user_xxx","time":"2019-06-21 23:20:04","n_likes":0}
+                    ]
+            }
+            }
+        });
+        var id = getQueryVariable("id");
+        $.ajax({
+            url: "https://recomi.site/campus_system/circle_getContent.php?id=" + id,
+            type: "GET",
+            async:false,    //异步
+            beforeSend:function() {
+                // $("#threads").hide();
+            },
+            success: function (data) {
+                // var jsonArr = jQuery.parseJSON(data);
+                // alert(data);
+                // threads.$data.data = data; //更新数据
+                // var jsonArr = jQuery.parseJSON(data);
+                // threads.$data.data = jsonArr.data; //更新数据
+                // $("#threads").show();
+                // $(".loading").hide();
+            },
+            error:function (msg) {
+                mui.alert("获取信息失败，请检查网络");
+            },
+            complete:function () {
+                // mui('#refreshContainer').pullRefresh().endPulldown();
+            }
+        });
+        function getQueryVariable(variable) {
+            var query = window.location.search.substring(1);
+            var vars = query.split("&");
+            for (var i=0;i<vars.length;i++) {
+                var pair = vars[i].split("=");
+                if(pair[0] == variable){return pair[1];}
+            }
+            return(false);
+        }
+    });
+</script>
+</body>
+</html>

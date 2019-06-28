@@ -60,7 +60,7 @@
 
     <header id="header" class="mui-bar mui-bar-nav">
         <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
-        <h1 class="mui-title">导航栏</h1>
+        <h1 class="mui-title">圈子</h1>
     </header>
 	<div class="mui-scroll-wrapper mui-content bg-content" id="refreshContainer">
 		<div id="main" class="mui-scroll">
@@ -92,40 +92,41 @@
 				<span class="text-info">Loading...</span>
 			</div>
 			<ul class="list-unstyled w-100" id="threads">
-					<li v-for="item in data" class="mui-card mb-1 m-0 w-100 shadow-none waves" >
-						<div class="mui-card-header mui-card-media border-0 p-3">
-							<img width="35" height="35" src="icons/ic_cricle.png" />
-							<div class="mui-media-body">
-                                <div class="text-dark medium pb-1">user_id:{{item.user_id}}</div>
-								<p class="small">社区版主</p>
-							</div>
+				<li v-for="(item,index) in data" :id="item.thread_id"  class="mui-card mb-1 m-0 w-100 shadow-none waves">
+					<!--<div class="thread_id" style="display: none">{{item.thread_id}}</div>-->
+					<div class="mui-card-header mui-card-media border-0 p-3">
+						<img width="35" height="35" src="icons/ic_cricle.png" />
+						<div class="mui-media-body">
+							<div class="text-dark medium pb-1">{{item.user_id}}</div>
+							<p class="small">学生</p>
 						</div>
-						<p class="text-dark pl-3 pr-3 text-break">{{item.content}}</p>
-						<div class="row img-thumbnail border-0 m-0 p-2" id="exchange_img">
-							<!--<div class="col-4 text-center p-1 waves">-->
-								<!--<img src="images/2.jpg" />-->
-							<!--</div>-->
-							<!--<div class="col-4 text-center p-1 waves">-->
-								<!--<img src="images/2.jpg" />-->
-							<!--</div>-->
-							<!--<div class="col-4 text-center p-1 waves">-->
-								<!--<img src="images/2.jpg" />-->
-							<!--</div>-->
-						</div>
-						<div class="flex-row p-1 pl-3 pr-3 align-items-center text-black-50">
-							<!--<span class="pText pl-1 pr-1">推荐</span>-->
-							<span>{{item.time}}</span>
-							<span class="float-right ml-2 mr-2">
-						<img src="icons/ic_page_view.svg"/>
-						<span>288</span>
-					</span>
-							<span class="float-right ml-2">
-						<img src="icons/ic_leave_word.svg"/>
-						<span id="#">2889</span>
-					</span>
-						</div>
-					</li>
-				</ul>
+					</div>
+					<p class="text-dark pl-3 pr-3 text-break">{{item.content}}</p>
+					<div class="row img-thumbnail border-0 m-0 p-2" id="exchange_img">
+						<!--<div class="col-4 text-center p-1 waves">-->
+							<!--<img src="images/2.jpg" />-->
+						<!--</div>-->
+						<!--<div class="col-4 text-center p-1 waves">-->
+							<!--<img src="images/2.jpg" />-->
+						<!--</div>-->
+						<!--<div class="col-4 text-center p-1 waves">-->
+							<!--<img src="images/2.jpg" />-->
+						<!--</div>-->
+					</div>
+					<div class="flex-row p-1 pl-3 pr-3 align-items-center text-black-50">
+						<!--<span class="pText pl-1 pr-1">推荐</span>-->
+						<span>{{item.time}}</span>
+						<span class="float-right ml-2 mr-2">
+					<img src="icons/ic_page_view.svg"/>
+					<span>288</span>
+				</span>
+						<span class="float-right ml-2">
+					<img src="icons/ic_leave_word.svg"/>
+					<span id="#">2889</span>
+				</span>
+					</div>
+				</li>
+			</ul>
 		</div>
         <div id="float-icons" style="z-index: 1001;border-radius: 2rem" class="position-fixed row r-0 b-0 mr-3 mb-2 bg-info ">
             <i style="font-size: larger " class="fa fa-angle-up waves-circle-left float-icon d-block shadow-none bg-transparent text-light scrollToTop"></i>
@@ -148,8 +149,9 @@
 	jQuery(document).ready(function ($) {
         refreshData();
         mui("#threads").on("tap","li",function(){
-            mui.openWindow({
-                url: "circle_viewThread.html",
+			var id = $(this).attr("id");
+			mui.openWindow({
+                url: "circle_viewThread.html?id=" + id,
                 // id: 'this.href',
                 show:{
                     autoShow: true,
@@ -190,7 +192,7 @@
                 //
             },
             success: function (data) {
-                //
+				mui.toast("刷新成功")
             },
             error:function (msg) {
                 mui.alert("获取信息失败，请检查网络");
@@ -244,26 +246,26 @@
 		scrollToTop();
 	});
 	function scrollToTop() {
-		mui('#refreshContainer').pullRefresh().scrollTo(0, 0, 1000);
+		mui('#refreshContainer').pullRefresh().scrollTo(0, 0, 500);
 	}
 </script>
 <script>
-	jQuery(document).ready(function ($) {
-		//向上手势，页面下滑
-		$(window).on("swipeup",function (e) {
-			// $('#float-icons').addClass('animated fadeOutUp invisible');
-			$("#float-icons").css({
-				transform:'translateY(' + $("#float-icons").height() * 2 + 'px)'
-			});
-		});
-		//向下手势，页面上滑
-		$(window).on("swipedown",function (e) {
-			// $('#float-icons').removeClass('fadeInDown invisible');
-			$("#float-icons").css({
-				transform:'translateY(0px)'
-			});
-		});
-	});
+	// jQuery(document).ready(function ($) {
+	// 	//向上手势，页面下滑
+	// 	$(window).on("swipeup",function (e) {
+	// 		// $('#float-icons').addClass('animated fadeOutUp invisible');
+	// 		$("#float-icons").css({
+	// 			transform:'translateY(' + $("#float-icons").height() * 2 + 'px)'
+	// 		});
+	// 	});
+	// 	//向下手势，页面上滑
+	// 	$(window).on("swipedown",function (e) {
+	// 		// $('#float-icons').removeClass('fadeInDown invisible');
+	// 		$("#float-icons").css({
+	// 			transform:'translateY(0px)'
+	// 		});
+	// 	});
+	// });
 </script>
 
 <script>
